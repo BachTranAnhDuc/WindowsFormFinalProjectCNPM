@@ -29,6 +29,7 @@ namespace WindowsFormFinalProject.Menu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
             this.prdEmID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +49,19 @@ namespace WindowsFormFinalProject.Menu
             this.prdQuantity = new System.Windows.Forms.TextBox();
             this.prdName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.eShopManagementDataSet = new WindowsFormFinalProject.eShopManagementDataSet();
+            this.wareHouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wareHouseTableAdapter = new WindowsFormFinalProject.eShopManagementDataSetTableAdapters.wareHouseTableAdapter();
+            this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceInDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceOutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -251,13 +264,94 @@ namespace WindowsFormFinalProject.Menu
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(423, 86);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productIDDataGridViewTextBoxColumn,
+            this.productNameDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.priceInDataGridViewTextBoxColumn,
+            this.priceOutDataGridViewTextBoxColumn,
+            this.categoryNameDataGridViewTextBoxColumn,
+            this.employeeIDDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.wareHouseBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(431, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(591, 451);
+            this.dataGridView1.Size = new System.Drawing.Size(591, 390);
             this.dataGridView1.TabIndex = 80;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // eShopManagementDataSet
+            // 
+            this.eShopManagementDataSet.DataSetName = "eShopManagementDataSet";
+            this.eShopManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // wareHouseBindingSource
+            // 
+            this.wareHouseBindingSource.DataMember = "wareHouse";
+            this.wareHouseBindingSource.DataSource = this.eShopManagementDataSet;
+            // 
+            // wareHouseTableAdapter
+            // 
+            this.wareHouseTableAdapter.ClearBeforeFill = true;
+            // 
+            // productIDDataGridViewTextBoxColumn
+            // 
+            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "productID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "productID";
+            this.productIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
+            this.productIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "productName";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "productName";
+            this.productNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // priceInDataGridViewTextBoxColumn
+            // 
+            this.priceInDataGridViewTextBoxColumn.DataPropertyName = "priceIn";
+            this.priceInDataGridViewTextBoxColumn.HeaderText = "priceIn";
+            this.priceInDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceInDataGridViewTextBoxColumn.Name = "priceInDataGridViewTextBoxColumn";
+            this.priceInDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // priceOutDataGridViewTextBoxColumn
+            // 
+            this.priceOutDataGridViewTextBoxColumn.DataPropertyName = "priceOut";
+            this.priceOutDataGridViewTextBoxColumn.HeaderText = "priceOut";
+            this.priceOutDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceOutDataGridViewTextBoxColumn.Name = "priceOutDataGridViewTextBoxColumn";
+            this.priceOutDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // categoryNameDataGridViewTextBoxColumn
+            // 
+            this.categoryNameDataGridViewTextBoxColumn.DataPropertyName = "categoryName";
+            this.categoryNameDataGridViewTextBoxColumn.HeaderText = "categoryName";
+            this.categoryNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
+            this.categoryNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // employeeIDDataGridViewTextBoxColumn
+            // 
+            this.employeeIDDataGridViewTextBoxColumn.DataPropertyName = "employeeID";
+            this.employeeIDDataGridViewTextBoxColumn.HeaderText = "employeeID";
+            this.employeeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.employeeIDDataGridViewTextBoxColumn.Name = "employeeIDDataGridViewTextBoxColumn";
+            this.employeeIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // WareHouses
             // 
@@ -287,6 +381,8 @@ namespace WindowsFormFinalProject.Menu
             this.Text = "WareHouses";
             this.Load += new System.EventHandler(this.WareHouses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,5 +409,15 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.TextBox prdQuantity;
         private System.Windows.Forms.TextBox prdName;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private eShopManagementDataSet eShopManagementDataSet;
+        private System.Windows.Forms.BindingSource wareHouseBindingSource;
+        private eShopManagementDataSetTableAdapters.wareHouseTableAdapter wareHouseTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceInDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceOutDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
     }
 }
