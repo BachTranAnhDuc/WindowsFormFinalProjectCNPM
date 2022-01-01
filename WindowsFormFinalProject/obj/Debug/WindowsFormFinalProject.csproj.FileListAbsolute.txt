@@ -1,0 +1,12 @@
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\bin\Debug\WindowsFormFinalProject.exe.config
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\bin\Debug\WindowsFormFinalProject.exe
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\bin\Debug\WindowsFormFinalProject.pdb
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\bin\Debug\XanderUI.dll
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.AssemblyReference.cache
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Form1.resources
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Properties.Resources.resources
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.GenerateResource.cache
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.CoreCompileInputs.cache
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.CopyComplete
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.exe
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.pdb
