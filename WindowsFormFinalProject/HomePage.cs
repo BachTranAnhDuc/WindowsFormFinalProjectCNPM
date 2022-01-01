@@ -46,5 +46,10 @@ namespace WindowsFormFinalProject
         {
             OpenChildForm(new WareHouses());
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

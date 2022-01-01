@@ -12,3 +12,4 @@ D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\Windo
 D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.pdb
 D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.HomePage.resources
 D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.WareHouses.resources
+D:\Study\Winform\WindowsFormFinalProject\WindowsFormFinalProject\bin\Debug\FontAwesome.Sharp.dll

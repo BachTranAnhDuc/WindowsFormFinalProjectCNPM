@@ -43,18 +43,20 @@ namespace WindowsFormFinalProject
             // 
             this.passwordInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.passwordInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordInput.Location = new System.Drawing.Point(247, 314);
+            this.passwordInput.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordInput.Location = new System.Drawing.Point(254, 294);
             this.passwordInput.Name = "passwordInput";
-            this.passwordInput.Size = new System.Drawing.Size(169, 22);
+            this.passwordInput.Size = new System.Drawing.Size(200, 32);
             this.passwordInput.TabIndex = 12;
             // 
             // usernameInput
             // 
             this.usernameInput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.usernameInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernameInput.Location = new System.Drawing.Point(247, 242);
+            this.usernameInput.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameInput.Location = new System.Drawing.Point(254, 218);
             this.usernameInput.Name = "usernameInput";
-            this.usernameInput.Size = new System.Drawing.Size(169, 22);
+            this.usernameInput.Size = new System.Drawing.Size(200, 32);
             this.usernameInput.TabIndex = 11;
             // 
             // password
@@ -62,7 +64,7 @@ namespace WindowsFormFinalProject
             this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.password.AutoSize = true;
             this.password.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(109, 316);
+            this.password.Location = new System.Drawing.Point(105, 296);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(122, 30);
             this.password.TabIndex = 10;
@@ -73,7 +75,7 @@ namespace WindowsFormFinalProject
             this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(98, 234);
+            this.username.Location = new System.Drawing.Point(105, 220);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(133, 30);
             this.username.TabIndex = 9;
@@ -84,7 +86,8 @@ namespace WindowsFormFinalProject
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(95, 123);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(102, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 47);
             this.label1.TabIndex = 8;
@@ -104,9 +107,9 @@ namespace WindowsFormFinalProject
             this.btnSubmit.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnSubmit.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnSubmit.Location = new System.Drawing.Point(247, 367);
+            this.btnSubmit.Location = new System.Drawing.Point(318, 357);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(200, 50);
+            this.btnSubmit.Size = new System.Drawing.Size(136, 50);
             this.btnSubmit.TabIndex = 13;
             this.btnSubmit.TextColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit.Vertical_Alignment = System.Drawing.StringAlignment.Center;

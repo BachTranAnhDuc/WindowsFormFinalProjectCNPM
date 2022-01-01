@@ -36,5 +36,48 @@ namespace WindowsFormFinalProject.Menu
             prdCateName.Text = row.Cells[5].Value.ToString();
             prdEmID.Text = row.Cells[6].Value.ToString();
         }
+
+        private void btnWareAdd_Click(object sender, EventArgs e)
+        {
+            eShopManagementDataSet.wareHouseRow ware = this.eShopManagementDataSet.wareHouse.AddwareHouseRow(prdID.Text, prdName.Text, Int32.Parse(prdQuantity.Text), Int32.Parse(prdPriceIn.Text), Int32.Parse(prdPriceOut.Text), prdCateName.Text, prdEmID.Text);
+            this.wareHouseTableAdapter.Update(ware);
+            MessageBox.Show("Product add successfully!");
+        }
+
+        private void btnWareDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(
+                "Are you sure", "Product Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question
+            );
+
+            if (dr == DialogResult.Yes)
+            {
+                int rowIndex = this.dataGridView1.CurrentCell.RowIndex;
+                eShopManagementDataSet.wareHouseRow ware = (eShopManagementDataSet.wareHouseRow)this.eShopManagementDataSet.wareHouse.Rows[rowIndex];
+                ware.Delete();
+
+                this.wareHouseTableAdapter.Update(ware);
+
+                MessageBox.Show("Product has been deleted!");
+            }
+        }
+
+        private void btnWareUpdate_Click(object sender, EventArgs e)
+        {
+            int rowIndex = this.dataGridView1.CurrentCell.RowIndex;
+            eShopManagementDataSet.wareHouseRow ware = (eShopManagementDataSet.wareHouseRow)this.eShopManagementDataSet.wareHouse.Rows[rowIndex];
+            ware.productID = prdID.Text;
+            ware.productName = prdName.Text;
+            ware.quantity = Int32.Parse(prdQuantity.Text);
+            ware.priceIn = Int32.Parse(prdPriceIn.Text);
+            ware.priceOut = Int32.Parse(prdPriceOut.Text);
+            ware.categoryName = prdCateName.Text;
+            ware.employeeID = prdEmID.Text;
+
+
+            this.wareHouseTableAdapter.Update(ware);
+
+            MessageBox.Show("Product has been updated successfully!");
+        }
     }
 }
