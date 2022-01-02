@@ -95,7 +95,7 @@ namespace WindowsFormFinalProject
             // btnSubmit
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSubmit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSubmit.BackgroundColor = System.Drawing.Color.Transparent;
             this.btnSubmit.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_login_96;
             this.btnSubmit.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.btnSubmit.ButtonText = "Login";

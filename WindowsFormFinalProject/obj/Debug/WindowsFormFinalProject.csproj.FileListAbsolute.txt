@@ -29,3 +29,5 @@ D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\W
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.exe
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.pdb
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Bill.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Products.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Customer.resources

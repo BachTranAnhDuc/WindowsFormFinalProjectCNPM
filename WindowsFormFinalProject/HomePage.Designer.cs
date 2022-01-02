@@ -31,19 +31,19 @@ namespace WindowsFormFinalProject
         {
             this.sideBar = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.Panel();
+            this.xuiClock1 = new XanderUI.XUIClock();
             this.navBar = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.textHead = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconExit = new FontAwesome.Sharp.IconButton();
             this.xuiButton3 = new XanderUI.XUIButton();
             this.xuiButton2 = new XanderUI.XUIButton();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.btnProduct = new XanderUI.XUIButton();
             this.btnCustomer = new XanderUI.XUIButton();
             this.btnBill = new XanderUI.XUIButton();
             this.btnWareHouse = new XanderUI.XUIButton();
             this.btnHome = new XanderUI.XUIButton();
-            this.xuiClock1 = new XanderUI.XUIClock();
             this.sideBar.SuspendLayout();
             this.logo.SuspendLayout();
             this.navBar.SuspendLayout();
@@ -54,7 +54,7 @@ namespace WindowsFormFinalProject
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
             this.sideBar.Controls.Add(this.xuiButton3);
             this.sideBar.Controls.Add(this.xuiButton2);
-            this.sideBar.Controls.Add(this.xuiButton1);
+            this.sideBar.Controls.Add(this.btnProduct);
             this.sideBar.Controls.Add(this.btnCustomer);
             this.sideBar.Controls.Add(this.btnBill);
             this.sideBar.Controls.Add(this.btnWareHouse);
@@ -76,6 +76,28 @@ namespace WindowsFormFinalProject
             this.logo.Size = new System.Drawing.Size(230, 130);
             this.logo.TabIndex = 0;
             // 
+            // xuiClock1
+            // 
+            this.xuiClock1.CircleThickness = 6;
+            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
+            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
+            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
+            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
+            this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.Location = new System.Drawing.Point(44, 4);
+            this.xuiClock1.Name = "xuiClock1";
+            this.xuiClock1.ShowAmPm = false;
+            this.xuiClock1.ShowHexagon = true;
+            this.xuiClock1.ShowMinutesCircle = true;
+            this.xuiClock1.ShowSecondsCircle = true;
+            this.xuiClock1.Size = new System.Drawing.Size(126, 120);
+            this.xuiClock1.TabIndex = 0;
+            this.xuiClock1.Text = "xuiClock1";
+            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
+            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            // 
             // navBar
             // 
             this.navBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
@@ -88,6 +110,17 @@ namespace WindowsFormFinalProject
             this.navBar.Size = new System.Drawing.Size(1152, 130);
             this.navBar.TabIndex = 1;
             // 
+            // textHead
+            // 
+            this.textHead.AutoSize = true;
+            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textHead.Location = new System.Drawing.Point(45, 49);
+            this.textHead.Name = "textHead";
+            this.textHead.Size = new System.Drawing.Size(204, 39);
+            this.textHead.TabIndex = 7;
+            this.textHead.Text = "Home Page";
+            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
@@ -97,17 +130,6 @@ namespace WindowsFormFinalProject
             this.panelMain.Size = new System.Drawing.Size(1152, 623);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
-            // textHead
-            // 
-            this.textHead.AutoSize = true;
-            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textHead.Location = new System.Drawing.Point(45, 49);
-            this.textHead.Name = "textHead";
-            this.textHead.Size = new System.Drawing.Size(211, 40);
-            this.textHead.TabIndex = 7;
-            this.textHead.Text = "Home Page";
             // 
             // iconMinimize
             // 
@@ -185,27 +207,28 @@ namespace WindowsFormFinalProject
             this.xuiButton2.TextColor = System.Drawing.Color.GhostWhite;
             this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // xuiButton1
+            // btnProduct
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.xuiButton1.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_shopping_cart_96;
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "PRODUCT";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.xuiButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(0, 450);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(230, 80);
-            this.xuiButton1.TabIndex = 5;
-            this.xuiButton1.TextColor = System.Drawing.Color.GhostWhite;
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnProduct.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
+            this.btnProduct.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_shopping_cart_96;
+            this.btnProduct.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnProduct.ButtonText = "PRODUCT";
+            this.btnProduct.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnProduct.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnProduct.CornerRadius = 5;
+            this.btnProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProduct.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnProduct.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnProduct.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnProduct.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnProduct.Location = new System.Drawing.Point(0, 450);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(230, 80);
+            this.btnProduct.TabIndex = 5;
+            this.btnProduct.TextColor = System.Drawing.Color.GhostWhite;
+            this.btnProduct.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnCustomer
             // 
@@ -228,6 +251,7 @@ namespace WindowsFormFinalProject
             this.btnCustomer.TabIndex = 4;
             this.btnCustomer.TextColor = System.Drawing.Color.GhostWhite;
             this.btnCustomer.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnBill
             // 
@@ -298,28 +322,6 @@ namespace WindowsFormFinalProject
             this.btnHome.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // xuiClock1
-            // 
-            this.xuiClock1.CircleThickness = 6;
-            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
-            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
-            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
-            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
-            this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.Location = new System.Drawing.Point(44, 4);
-            this.xuiClock1.Name = "xuiClock1";
-            this.xuiClock1.ShowAmPm = false;
-            this.xuiClock1.ShowHexagon = true;
-            this.xuiClock1.ShowMinutesCircle = true;
-            this.xuiClock1.ShowSecondsCircle = true;
-            this.xuiClock1.Size = new System.Drawing.Size(126, 120);
-            this.xuiClock1.TabIndex = 0;
-            this.xuiClock1.Text = "xuiClock1";
-            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
-            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -355,7 +357,7 @@ namespace WindowsFormFinalProject
         private XanderUI.XUIButton btnBill;
         private XanderUI.XUIButton xuiButton3;
         private XanderUI.XUIButton xuiButton2;
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton btnProduct;
         private System.Windows.Forms.Label textHead;
         private XanderUI.XUIClock xuiClock1;
     }

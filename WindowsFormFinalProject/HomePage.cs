@@ -45,7 +45,13 @@ namespace WindowsFormFinalProject
         private void btnWareHouse_Click(object sender, EventArgs e)
         {
             OpenChildForm(new WareHouses());
+
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(19, 15, 64);
+
             textHead.Text = "Ware House";
+            navBar.ForeColor = myRgbColor;
+            sideBar.ForeColor = myRgbColor;
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
@@ -78,6 +84,18 @@ namespace WindowsFormFinalProject
         {
             OpenChildForm(new Bill());
             textHead.Text = "Bill Detail";
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Products());
+            textHead.Text = "Product";
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Customer());
+            textHead.Text = "Manage Customer";
         }
     }
 }

@@ -72,6 +72,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>eShopManagementDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="eShopManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eShopManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eShopManagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eShopManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="eShopManagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eShopManagementDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +105,18 @@
     <Compile Include="Menu\Bill.Designer.cs">
       <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\WareHouses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +134,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\WareHouses.resx">
       <DependentUpon>WareHouses.cs</DependentUpon>
@@ -153,6 +186,39 @@
     </None>
     <None Include="eShopManagementDataSet2.xss">
       <DependentUpon>eShopManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet3.xsc">
+      <DependentUpon>eShopManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eShopManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eShopManagementDataSet3.xss">
+      <DependentUpon>eShopManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet4.xsc">
+      <DependentUpon>eShopManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eShopManagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eShopManagementDataSet4.xss">
+      <DependentUpon>eShopManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet5.xsc">
+      <DependentUpon>eShopManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="eShopManagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eShopManagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eShopManagementDataSet5.xss">
+      <DependentUpon>eShopManagementDataSet5.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
