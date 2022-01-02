@@ -307,7 +307,7 @@ namespace WindowsFormFinalProject
             this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
             this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
             this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.Location = new System.Drawing.Point(31, 4);
+            this.xuiClock1.Location = new System.Drawing.Point(44, 4);
             this.xuiClock1.Name = "xuiClock1";
             this.xuiClock1.ShowAmPm = false;
             this.xuiClock1.ShowHexagon = true;
