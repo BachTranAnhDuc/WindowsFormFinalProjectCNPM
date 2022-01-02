@@ -37,6 +37,9 @@ namespace WindowsFormFinalProject
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new XanderUI.XUIButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconMinimize = new FontAwesome.Sharp.IconButton();
+            this.iconExit = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // passwordInput
@@ -119,11 +122,47 @@ namespace WindowsFormFinalProject
             // 
             this.panel1.BackgroundImage = global::WindowsFormFinalProject.Properties.Resources.ali_karimiboroujeni_Qaq9q05ZIYU_unsplash;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.iconMinimize);
+            this.panel1.Controls.Add(this.iconExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(579, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(305, 464);
             this.panel1.TabIndex = 14;
+            // 
+            // iconMinimize
+            // 
+            this.iconMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.iconMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconMinimize.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMinimize.IconSize = 25;
+            this.iconMinimize.Location = new System.Drawing.Point(217, 0);
+            this.iconMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.iconMinimize.Name = "iconMinimize";
+            this.iconMinimize.Size = new System.Drawing.Size(40, 37);
+            this.iconMinimize.TabIndex = 16;
+            this.iconMinimize.UseVisualStyleBackColor = false;
+            this.iconMinimize.Click += new System.EventHandler(this.iconMinimize_Click);
+            // 
+            // iconExit
+            // 
+            this.iconExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconExit.BackColor = System.Drawing.Color.Transparent;
+            this.iconExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconExit.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconExit.IconSize = 25;
+            this.iconExit.Location = new System.Drawing.Point(265, 0);
+            this.iconExit.Margin = new System.Windows.Forms.Padding(4);
+            this.iconExit.Name = "iconExit";
+            this.iconExit.Size = new System.Drawing.Size(40, 37);
+            this.iconExit.TabIndex = 15;
+            this.iconExit.UseVisualStyleBackColor = false;
+            this.iconExit.Click += new System.EventHandler(this.iconExit_Click);
             // 
             // Form1
             // 
@@ -142,6 +181,7 @@ namespace WindowsFormFinalProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +196,8 @@ namespace WindowsFormFinalProject
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton btnSubmit;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton iconMinimize;
+        private FontAwesome.Sharp.IconButton iconExit;
     }
 }
 

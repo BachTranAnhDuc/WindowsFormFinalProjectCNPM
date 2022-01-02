@@ -75,5 +75,15 @@ namespace WindowsFormFinalProject
                 MessageBox.Show(result);
             }
         }
+
+        private void iconMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

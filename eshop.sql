@@ -14,18 +14,6 @@ create table Employee
 	primary key(ID)
 );
 
-create table Bill
-(
-	bilID varchar(20),
-	productID varchar(20), 
-	productName nvarchar(100),
-	price int,
-	quantity int,
-	times date,
-	employeeID varchar(20),
-	primary key(bilID)
-);
-
 create table wareHouse
 (
 	productID varchar(20),
@@ -38,15 +26,75 @@ create table wareHouse
 	primary key(productID)
 );
 
+create table Customer
+(
+	cusID varchar(20),
+	username varchar(100),
+	passwords varchar(100),
+	nameCus nvarchar(100),
+	addressCus nvarchar(100),
+	primary key(cusID)
+);
+
+create table Category
+(
+	nameCate nvarchar(100),
+	primary key(nameCate)
+);
+
 create table Product
 (
-	prdName nvarchar(100),
-	prdID varchar(20),
-	billID varchar(20),
+	productID varchar(20),
+	namePrd nvarchar(100),
 	img varchar(200),
+	nameCate nvarchar(100),
+	price int,
+	primary key(productID)
+);
+
+create table Bill
+(
+	billID varchar(20),
+	empID varchar(20),
+	cusID varchar(20),
+	datePick date,
+	primary key(billID)
+);
+
+create table BillDetail
+(
+	prdID varchar(20),
+	quantity int,
+	price int,
+	billID varchar(20),
 	primary key(prdID)
 );
 
+
+
+alter table wareHouse
+add constraint FK_Ware_Emp
+foreign key (employeeID) references Employee(ID);
+
+alter table Product
+add constraint FK_Prd_Cate 
+foreign key (nameCate) references Category(nameCate);
+
+alter table Bill
+add constraint FK_Bill_Cus
+foreign key (cusID) references Customer(cusID);
+
+alter table Bill
+add constraint FK_Bill_Emp
+foreign key (empID) references Employee(ID);
+
+alter table BillDetail
+add constraint FK_BillDe_Bill
+foreign key (billID) references Bill(billID);
+
+alter table BillDetail
+add constraint FK_BillDe_Prd
+foreign key (prdID) references Product(productID);
 
 /* Insert values */
 
@@ -62,11 +110,15 @@ insert into wareHouse (productID, productName, quantity, priceIn, priceOut, cate
 select * from Employee;
 select * from Product;
 select * from wareHouse;
+select * from Customer;
+select * from Bill;
+select * from BillDetail;
+select * from Category;
 
 drop table wareHouse;
 drop table Product;
 drop table Employee;
 
-delete from wareHouse where productID = '001'
+delete from wareHouse where productID = '123'
 
 drop database eShopManager

@@ -51,5 +51,20 @@ namespace WindowsFormFinalProject
         {
 
         }
+
+        private void iconMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new HomePage());
+        }
     }
 }
