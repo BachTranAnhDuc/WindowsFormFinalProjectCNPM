@@ -156,10 +156,10 @@ insert into BillDetail (prdID, quantity, price, billID) values ('prd002', 1, 20,
 insert into BillDetail (prdID, quantity, price, billID) values ('prd003', 1, 103, 'bill001');
 insert into BillDetail (prdID, quantity, price, billID) values ('prd004', 1, 10, 'bill001');
 
-insert into BillDetail (prdID, quantity, price, billID) values ('prd005', 1, 29, 'bill001');
-insert into BillDetail (prdID, quantity, price, billID) values ('prd006', 1, 34, 'bill001');
-insert into BillDetail (prdID, quantity, price, billID) values ('prd007', 1, 89, 'bill001');
-insert into BillDetail (prdID, quantity, price, billID) values ('prd008', 1, 99, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd005', 1, 29, 'bill002');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd006', 1, 34, 'bill002');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd007', 1, 89, 'bill002');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd008', 1, 99, 'bill002');
 
 
 
