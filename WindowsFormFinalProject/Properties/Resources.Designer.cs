@@ -93,9 +93,59 @@ namespace WindowsFormFinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-home-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_line_chart_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-line-chart-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_login_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-login-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_left_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-rounded-left-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_manager_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-manager-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shop_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-shop-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +166,16 @@ namespace WindowsFormFinalProject.Properties {
         internal static System.Drawing.Bitmap icons8_shopping_cart_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-shopping-cart-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rubik_logo {
+            get {
+                object obj = ResourceManager.GetObject("rubik-logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

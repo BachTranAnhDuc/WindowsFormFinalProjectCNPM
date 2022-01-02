@@ -134,10 +134,16 @@
     <None Include="Resources\icons8-shopping-cart-96.png" />
     <None Include="Resources\icons8-bill-96.png" />
     <None Include="Resources\icons8-login-96.png" />
+    <None Include="Resources\icons8-home-96.png" />
+    <None Include="Resources\icons8-manager-96.png" />
+    <None Include="Resources\icons8-line-chart-96.png" />
+    <None Include="Resources\icons8-logout-rounded-left-96.png" />
+    <None Include="Resources\icons8-shop-96.png" />
     <Content Include="Resources\logo100.png" />
     <Content Include="Resources\logo200.png" />
     <Content Include="Resources\password-1.png" />
     <Content Include="Resources\password-2.png" />
+    <None Include="Resources\rubik-logo.png" />
     <Content Include="Resources\username-1.png" />
     <Content Include="Resources\username-2.png" />
   </ItemGroup>

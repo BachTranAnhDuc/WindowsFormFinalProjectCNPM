@@ -128,7 +128,7 @@ namespace WindowsFormFinalProject
             // xuiButton3
             // 
             this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.xuiButton3.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.username_1;
+            this.xuiButton3.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_logout_rounded_left_96;
             this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton3.ButtonText = "LOG OUT";
             this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
@@ -150,7 +150,7 @@ namespace WindowsFormFinalProject
             // xuiButton2
             // 
             this.xuiButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.xuiButton2.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.username_1;
+            this.xuiButton2.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_line_chart_96;
             this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton2.ButtonText = "STATISTIC";
             this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
@@ -194,7 +194,7 @@ namespace WindowsFormFinalProject
             // btnCustomer
             // 
             this.btnCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.btnCustomer.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.username_1;
+            this.btnCustomer.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_manager_96;
             this.btnCustomer.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.btnCustomer.ButtonText = "MANAGE";
             this.btnCustomer.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
@@ -238,7 +238,7 @@ namespace WindowsFormFinalProject
             // btnWareHouse
             // 
             this.btnWareHouse.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.btnWareHouse.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.username_1;
+            this.btnWareHouse.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_shop_96;
             this.btnWareHouse.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.btnWareHouse.ButtonText = "WARE HOUSE";
             this.btnWareHouse.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
@@ -261,7 +261,7 @@ namespace WindowsFormFinalProject
             // btnHome
             // 
             this.btnHome.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.btnHome.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.username_1;
+            this.btnHome.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_home_96;
             this.btnHome.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.btnHome.ButtonText = "HOME";
             this.btnHome.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
