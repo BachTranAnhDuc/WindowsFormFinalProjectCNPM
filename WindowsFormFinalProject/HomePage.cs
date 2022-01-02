@@ -188,6 +188,9 @@ namespace WindowsFormFinalProject
 
         private void btnStatistic_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Statistic());
+            textHead.Text = "Statistic";
+
             Color myRgbColor = new Color();
             myRgbColor = Color.FromArgb(109, 33, 79);
 

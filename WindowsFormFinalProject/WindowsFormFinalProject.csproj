@@ -117,6 +117,12 @@
     <Compile Include="Menu\Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\WareHouses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\WareHouses.resx">
       <DependentUpon>WareHouses.cs</DependentUpon>
