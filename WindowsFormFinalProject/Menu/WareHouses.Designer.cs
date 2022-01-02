@@ -81,7 +81,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdEmID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdEmID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdEmID.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdEmID.Location = new System.Drawing.Point(217, 369);
+            this.prdEmID.Location = new System.Drawing.Point(258, 369);
             this.prdEmID.Margin = new System.Windows.Forms.Padding(4);
             this.prdEmID.Name = "prdEmID";
             this.prdEmID.Size = new System.Drawing.Size(184, 29);
@@ -104,7 +104,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdCateName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdCateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdCateName.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdCateName.Location = new System.Drawing.Point(217, 320);
+            this.prdCateName.Location = new System.Drawing.Point(258, 320);
             this.prdCateName.Margin = new System.Windows.Forms.Padding(4);
             this.prdCateName.Name = "prdCateName";
             this.prdCateName.Size = new System.Drawing.Size(184, 29);
@@ -127,7 +127,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdID.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdID.Location = new System.Drawing.Point(217, 85);
+            this.prdID.Location = new System.Drawing.Point(258, 85);
             this.prdID.Margin = new System.Windows.Forms.Padding(4);
             this.prdID.Name = "prdID";
             this.prdID.Size = new System.Drawing.Size(184, 29);
@@ -136,7 +136,7 @@ namespace WindowsFormFinalProject.Menu
             // btnWareClear
             // 
             this.btnWareClear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareClear.Location = new System.Drawing.Point(325, 497);
+            this.btnWareClear.Location = new System.Drawing.Point(366, 497);
             this.btnWareClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareClear.Name = "btnWareClear";
             this.btnWareClear.Size = new System.Drawing.Size(76, 49);
@@ -147,7 +147,7 @@ namespace WindowsFormFinalProject.Menu
             // btnWareDelete
             // 
             this.btnWareDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareDelete.Location = new System.Drawing.Point(325, 426);
+            this.btnWareDelete.Location = new System.Drawing.Point(366, 426);
             this.btnWareDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareDelete.Name = "btnWareDelete";
             this.btnWareDelete.Size = new System.Drawing.Size(76, 49);
@@ -159,7 +159,7 @@ namespace WindowsFormFinalProject.Menu
             // btnWareUpdate
             // 
             this.btnWareUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareUpdate.Location = new System.Drawing.Point(228, 497);
+            this.btnWareUpdate.Location = new System.Drawing.Point(269, 497);
             this.btnWareUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareUpdate.Name = "btnWareUpdate";
             this.btnWareUpdate.Size = new System.Drawing.Size(80, 49);
@@ -171,7 +171,7 @@ namespace WindowsFormFinalProject.Menu
             // btnWareAdd
             // 
             this.btnWareAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareAdd.Location = new System.Drawing.Point(228, 426);
+            this.btnWareAdd.Location = new System.Drawing.Point(269, 426);
             this.btnWareAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareAdd.Name = "btnWareAdd";
             this.btnWareAdd.Size = new System.Drawing.Size(77, 49);
@@ -209,7 +209,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdPriceOut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdPriceOut.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdPriceOut.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdPriceOut.Location = new System.Drawing.Point(217, 273);
+            this.prdPriceOut.Location = new System.Drawing.Point(258, 273);
             this.prdPriceOut.Margin = new System.Windows.Forms.Padding(4);
             this.prdPriceOut.Name = "prdPriceOut";
             this.prdPriceOut.Size = new System.Drawing.Size(184, 29);
@@ -220,7 +220,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdPriceIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdPriceIn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdPriceIn.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdPriceIn.Location = new System.Drawing.Point(217, 225);
+            this.prdPriceIn.Location = new System.Drawing.Point(258, 225);
             this.prdPriceIn.Margin = new System.Windows.Forms.Padding(4);
             this.prdPriceIn.Name = "prdPriceIn";
             this.prdPriceIn.Size = new System.Drawing.Size(184, 29);
@@ -255,7 +255,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdQuantity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdQuantity.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdQuantity.Location = new System.Drawing.Point(217, 177);
+            this.prdQuantity.Location = new System.Drawing.Point(258, 177);
             this.prdQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.prdQuantity.Name = "prdQuantity";
             this.prdQuantity.Size = new System.Drawing.Size(184, 29);
@@ -266,7 +266,7 @@ namespace WindowsFormFinalProject.Menu
             this.prdName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.prdName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.prdName.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prdName.Location = new System.Drawing.Point(217, 131);
+            this.prdName.Location = new System.Drawing.Point(258, 131);
             this.prdName.Margin = new System.Windows.Forms.Padding(4);
             this.prdName.Name = "prdName";
             this.prdName.Size = new System.Drawing.Size(184, 29);
@@ -285,7 +285,7 @@ namespace WindowsFormFinalProject.Menu
             this.categoryNameDataGridViewTextBoxColumn,
             this.employeeIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.wareHouseBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(489, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(515, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;

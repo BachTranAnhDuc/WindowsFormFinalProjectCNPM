@@ -129,6 +129,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\default.jpg" />
+    <None Include="Resources\icons8-bill-32.png" />
+    <None Include="Resources\icons8-shopping-cart-16.png" />
+    <None Include="Resources\icons8-shopping-cart-96.png" />
+    <None Include="Resources\icons8-bill-96.png" />
+    <None Include="Resources\icons8-login-96.png" />
     <Content Include="Resources\logo100.png" />
     <Content Include="Resources\logo200.png" />
     <Content Include="Resources\password-1.png" />
