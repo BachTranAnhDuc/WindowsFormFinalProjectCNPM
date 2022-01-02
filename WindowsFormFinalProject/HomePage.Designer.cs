@@ -206,6 +206,7 @@ namespace WindowsFormFinalProject
             this.btnStatistic.TabIndex = 6;
             this.btnStatistic.TextColor = System.Drawing.Color.GhostWhite;
             this.btnStatistic.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // btnProduct
             // 

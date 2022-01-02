@@ -89,9 +89,6 @@ namespace WindowsFormFinalProject
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            activeForm.Close();
-            Reset();
-
             Color myRgbColor = new Color();
             myRgbColor = Color.FromArgb(46, 157, 93);
 
@@ -111,24 +108,103 @@ namespace WindowsFormFinalProject
             btnProduct.BackgroundColor = myRgbColor;
             btnStatistic.BackgroundColor = myRgbColor;
             btnLogOut.BackgroundColor = myRgbColor;
+            activeForm.Close();
+            Reset();
+
+            
         }
 
         private void btnBill_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Bill());
             textHead.Text = "Bill Detail";
+
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(25, 42, 86);
+
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(39, 60, 117);
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Products());
             textHead.Text = "Product";
+
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(34, 47, 62);
+
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(87, 101, 116);
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Customer());
             textHead.Text = "Manage Customer";
+
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(10, 61, 98);
+
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(60, 99, 130);
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
+        }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(109, 33, 79);
+
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(179, 55, 113);
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
         }
     }
 }
