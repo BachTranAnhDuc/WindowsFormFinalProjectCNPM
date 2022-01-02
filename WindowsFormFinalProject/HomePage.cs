@@ -49,9 +49,22 @@ namespace WindowsFormFinalProject
             Color myRgbColor = new Color();
             myRgbColor = Color.FromArgb(19, 15, 64);
 
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(48, 51, 107);
+
             textHead.Text = "Ware House";
-            navBar.ForeColor = myRgbColor;
-            sideBar.ForeColor = myRgbColor;
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
@@ -78,6 +91,26 @@ namespace WindowsFormFinalProject
         {
             activeForm.Close();
             Reset();
+
+            Color myRgbColor = new Color();
+            myRgbColor = Color.FromArgb(46, 157, 93);
+
+            Color myRgbColor2 = new Color();
+            myRgbColor2 = Color.FromArgb(151, 186, 161);
+
+            textHead.Text = "Ware House";
+
+            navBar.BackColor = myRgbColor;
+            sideBar.BackColor = myRgbColor;
+            logo.BackColor = myRgbColor2;
+
+            btnHome.BackgroundColor = myRgbColor;
+            btnWareHouse.BackgroundColor = myRgbColor;
+            btnBill.BackgroundColor = myRgbColor;
+            btnCustomer.BackgroundColor = myRgbColor;
+            btnProduct.BackgroundColor = myRgbColor;
+            btnStatistic.BackgroundColor = myRgbColor;
+            btnLogOut.BackgroundColor = myRgbColor;
         }
 
         private void btnBill_Click(object sender, EventArgs e)

@@ -37,8 +37,8 @@ namespace WindowsFormFinalProject
             this.panelMain = new System.Windows.Forms.Panel();
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconExit = new FontAwesome.Sharp.IconButton();
-            this.xuiButton3 = new XanderUI.XUIButton();
-            this.xuiButton2 = new XanderUI.XUIButton();
+            this.btnLogOut = new XanderUI.XUIButton();
+            this.btnStatistic = new XanderUI.XUIButton();
             this.btnProduct = new XanderUI.XUIButton();
             this.btnCustomer = new XanderUI.XUIButton();
             this.btnBill = new XanderUI.XUIButton();
@@ -52,8 +52,8 @@ namespace WindowsFormFinalProject
             // sideBar
             // 
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.sideBar.Controls.Add(this.xuiButton3);
-            this.sideBar.Controls.Add(this.xuiButton2);
+            this.sideBar.Controls.Add(this.btnLogOut);
+            this.sideBar.Controls.Add(this.btnStatistic);
             this.sideBar.Controls.Add(this.btnProduct);
             this.sideBar.Controls.Add(this.btnCustomer);
             this.sideBar.Controls.Add(this.btnBill);
@@ -163,49 +163,49 @@ namespace WindowsFormFinalProject
             this.iconExit.UseVisualStyleBackColor = true;
             this.iconExit.Click += new System.EventHandler(this.iconExit_Click);
             // 
-            // xuiButton3
+            // btnLogOut
             // 
-            this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.xuiButton3.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_logout_rounded_left_96;
-            this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton3.ButtonText = "LOG OUT";
-            this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton3.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton3.CornerRadius = 5;
-            this.xuiButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.xuiButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiButton3.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton3.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton3.Location = new System.Drawing.Point(0, 673);
-            this.xuiButton3.Name = "xuiButton3";
-            this.xuiButton3.Size = new System.Drawing.Size(230, 80);
-            this.xuiButton3.TabIndex = 7;
-            this.xuiButton3.TextColor = System.Drawing.Color.GhostWhite;
-            this.xuiButton3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLogOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
+            this.btnLogOut.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_logout_rounded_left_96;
+            this.btnLogOut.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnLogOut.ButtonText = "LOG OUT";
+            this.btnLogOut.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnLogOut.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogOut.CornerRadius = 5;
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLogOut.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnLogOut.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogOut.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 673);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(230, 80);
+            this.btnLogOut.TabIndex = 7;
+            this.btnLogOut.TextColor = System.Drawing.Color.GhostWhite;
+            this.btnLogOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // xuiButton2
+            // btnStatistic
             // 
-            this.xuiButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.xuiButton2.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_line_chart_96;
-            this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton2.ButtonText = "STATISTIC";
-            this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton2.CornerRadius = 5;
-            this.xuiButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.xuiButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiButton2.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton2.Location = new System.Drawing.Point(0, 530);
-            this.xuiButton2.Name = "xuiButton2";
-            this.xuiButton2.Size = new System.Drawing.Size(230, 80);
-            this.xuiButton2.TabIndex = 6;
-            this.xuiButton2.TextColor = System.Drawing.Color.GhostWhite;
-            this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnStatistic.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
+            this.btnStatistic.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_line_chart_96;
+            this.btnStatistic.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnStatistic.ButtonText = "STATISTIC";
+            this.btnStatistic.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnStatistic.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnStatistic.CornerRadius = 5;
+            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnStatistic.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnStatistic.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnStatistic.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 530);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Size = new System.Drawing.Size(230, 80);
+            this.btnStatistic.TabIndex = 6;
+            this.btnStatistic.TextColor = System.Drawing.Color.GhostWhite;
+            this.btnStatistic.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btnProduct
             // 
@@ -355,8 +355,8 @@ namespace WindowsFormFinalProject
         private FontAwesome.Sharp.IconButton iconExit;
         private XanderUI.XUIButton btnCustomer;
         private XanderUI.XUIButton btnBill;
-        private XanderUI.XUIButton xuiButton3;
-        private XanderUI.XUIButton xuiButton2;
+        private XanderUI.XUIButton btnLogOut;
+        private XanderUI.XUIButton btnStatistic;
         private XanderUI.XUIButton btnProduct;
         private System.Windows.Forms.Label textHead;
         private XanderUI.XUIClock xuiClock1;
