@@ -1,4 +1,4 @@
-create database eShopManagement;
+﻿create database eShopManagement;
 
 use eShopManagement;
 
@@ -101,9 +101,66 @@ foreign key (prdID) references Product(productID);
 -- Employee table
 insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('001', 'Bach Tran Anh Duc', 'username001', '123456', 'Ho Chi Minh City');
 insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('002', 'Hoang Tuan Anh', 'username002', '123456', 'Ho Chi Minh City');
+insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('003', 'Nguyen Huu Nam', 'username003', '123456', 'Ho Chi Minh City');
+insert into Employee (ID, nameEmployee, uname, pwd, addresses) values ('004', 'Tran Thien Phong', 'username004', '123456', 'Ho Chi Minh City');
 
 
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('001', 'CoCaaa', '3', '10', '12', 'water', '002');
+
+
+insert into Category (nameCate) values ('2x2');
+insert into Category (nameCate) values ('3x3');
+insert into Category (nameCate) values ('4x4');
+insert into Category (nameCate) values ('5x5');
+insert into Category (nameCate) values ('clock');
+insert into Category (nameCate) values ('megaminx');
+insert into Category (nameCate) values ('mirror');
+insert into Category (nameCate) values ('pyraminx');
+insert into Category (nameCate) values ('skew-b');
+insert into Category (nameCate) values ('bluetooth');
+insert into Category (nameCate) values ('YJ');
+insert into Category (nameCate) values ('Twist');
+
+
+
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd001', 'Rubik 2x2 Gan', 'some text', '2x2', 29);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd002', 'Rubik 3x3 Dayan', 'some text', '3x3', 34);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd003', 'Rubik 3x3 Gan 11 M Pro Frosted Black', 'some text', '3x3', 89);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd004', 'Rubik 4x4 Gan', 'some text', '4x4', 99);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd005', 'Rubik 5x5 Valk', 'some text', '5x5', 105);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd006', 'Rubik Clock', 'some text', 'clock', 20);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd007', 'Rubik Megaminx Gan', 'some text', 'megaminx', 103);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd008', 'Rubk Mirror', 'some text', 'mirror', 10);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd009', 'Rubik Pyraminx Gan', 'some text', 'pyraminx', 19);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'Rubik Skew-b Gan', 'some text', 'skew-b', 25);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'GoCube Bluetooth', 'some text', 'bluetooth', 199);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'CuberSpeed ​​YJ Axis V2', 'some text', 'YJ', 16);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'CuberSpeed Twist 3x3 stickerelss', 'some text', 'Twist', 14);
+
+
+insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus001', 'usernamecustomer1', '123456789', 'Name Shop 001', 'Ho Chi Minh City');
+insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus002', 'usernamecustomer2', '123456789', 'Name Shop 002', 'Ho Chi Minh City');
+insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus003', 'usernamecustomer3', '123456789', 'Name Shop 003', 'Ho Chi Minh City');
+insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus004', 'usernamecustomer4', '123456789', 'Name Shop 004', 'Ho Chi Minh City');
+insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus005', 'usernamecustomer5', '123456789', 'Name Shop 005', 'Ho Chi Minh City');
+
+insert into Bill (billID, empID, cusID, datePick) values ('bill001', '004', 'cus002', '03/04/2021');
+insert into Bill (billID, empID, cusID, datePick) values ('bill002', '001', 'cus001', '03/04/2021');
+insert into Bill (billID, empID, cusID, datePick) values ('bill003', '003', 'cus004', '03/04/2021');
+insert into Bill (billID, empID, cusID, datePick) values ('bill004', '002', 'cus003', '03/04/2021');
+insert into Bill (billID, empID, cusID, datePick) values ('bill005', '004', 'cus005', '03/04/2021');
+
+
+insert into BillDetail (prdID, quantity, price, billID) values ('prd001', 1, 105, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd002', 1, 20, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd003', 1, 103, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd004', 1, 10, 'bill001');
+
+insert into BillDetail (prdID, quantity, price, billID) values ('prd005', 1, 29, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd006', 1, 34, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd007', 1, 89, 'bill001');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd008', 1, 99, 'bill001');
+
 
 
 
@@ -120,5 +177,6 @@ drop table Product;
 drop table Employee;
 
 delete from wareHouse where productID = '123'
+delete from BillDetail where quantity = 1
 
 drop database eShopManager
