@@ -159,10 +159,10 @@ namespace WindowsFormFinalProject.Menu
             // btnWareUpdate
             // 
             this.btnWareUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareUpdate.Location = new System.Drawing.Point(269, 497);
+            this.btnWareUpdate.Location = new System.Drawing.Point(258, 497);
             this.btnWareUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareUpdate.Name = "btnWareUpdate";
-            this.btnWareUpdate.Size = new System.Drawing.Size(80, 49);
+            this.btnWareUpdate.Size = new System.Drawing.Size(91, 49);
             this.btnWareUpdate.TabIndex = 71;
             this.btnWareUpdate.Text = "Update";
             this.btnWareUpdate.UseVisualStyleBackColor = true;
@@ -171,10 +171,10 @@ namespace WindowsFormFinalProject.Menu
             // btnWareAdd
             // 
             this.btnWareAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnWareAdd.Location = new System.Drawing.Point(269, 426);
+            this.btnWareAdd.Location = new System.Drawing.Point(258, 426);
             this.btnWareAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnWareAdd.Name = "btnWareAdd";
-            this.btnWareAdd.Size = new System.Drawing.Size(77, 49);
+            this.btnWareAdd.Size = new System.Drawing.Size(88, 49);
             this.btnWareAdd.TabIndex = 70;
             this.btnWareAdd.Text = "Add";
             this.btnWareAdd.UseVisualStyleBackColor = true;

@@ -45,6 +45,7 @@ namespace WindowsFormFinalProject
         private void btnWareHouse_Click(object sender, EventArgs e)
         {
             OpenChildForm(new WareHouses());
+            textHead.Text = "Ware House";
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
@@ -62,9 +63,21 @@ namespace WindowsFormFinalProject
             Close();
         }
 
+        private void Reset()
+        {
+            textHead.Text = "Home Page";
+        }
+
         private void btnHome_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new HomePage());
+            activeForm.Close();
+            Reset();
+        }
+
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Bill());
+            textHead.Text = "Bill Detail";
         }
     }
 }
