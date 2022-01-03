@@ -76,6 +76,10 @@ alter table wareHouse
 add constraint FK_Ware_Emp
 foreign key (employeeID) references Employee(ID);
 
+alter table wareHouse
+add constraint FK_Ware_Prd
+foreign key (productID) references Product(productID);
+
 alter table Product
 add constraint FK_Prd_Cate 
 foreign key (nameCate) references Category(nameCate);
@@ -171,6 +175,25 @@ select * from Customer;
 select * from Bill;
 select * from BillDetail;
 select * from Category;
+
+
+
+select * from wareHouse
+inner join Product
+on wareHouse.productID = Product.productID
+inner join Category
+on Product.nameCate = Category.nameCate
+where Category.nameCate = '2x2'
+
+
+
+
+
+
+
+
+
+
 
 drop table wareHouse;
 drop table Product;

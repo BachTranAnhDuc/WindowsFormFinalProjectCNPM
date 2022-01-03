@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,16 @@ namespace WindowsFormFinalProject.Menu
 {
     public partial class Bill : Form
     {
+/*        SqlConnection con;*/
+        SqlCommand cmd;
+        SqlDataReader reader;
+
         public Bill()
         {
             InitializeComponent();
         }
+
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
 
         private void Bill_Load(object sender, EventArgs e)
         {
@@ -23,6 +30,40 @@ namespace WindowsFormFinalProject.Menu
             this.billDetailTableAdapter.Fill(this.eShopManagementDataSet2.BillDetail);
             // TODO: This line of code loads data into the 'eShopManagementDataSet1.Bill' table. You can move, or remove it, as needed.
             this.billTableAdapter.Fill(this.eShopManagementDataSet1.Bill);
+
+        }
+
+        public void ConnectionSQL()
+        {
+            con.Open();
+            string sql = "select * from BillDetail";
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            dataGridDetailBill.DataSource = dt;
+        }
+
+        private void btnFindBillDetail_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string sql = "select * from BillDetail where billID like N'%" + this.textBoxFindBill.Text + "%'";
+            SqlCommand com = new SqlCommand(sql, con);
+            com.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(com);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            dataGridDetailBill.DataSource = dt;
+        }
+
+        private void textBoxFindBill_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

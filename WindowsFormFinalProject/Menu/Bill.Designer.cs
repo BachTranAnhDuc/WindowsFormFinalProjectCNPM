@@ -31,27 +31,26 @@ namespace WindowsFormFinalProject.Menu
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridBill = new System.Windows.Forms.DataGridView();
-            this.eShopManagementDataSet1 = new WindowsFormFinalProject.eShopManagementDataSet1();
-            this.billBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.billTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet1TableAdapters.BillTableAdapter();
             this.billIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cusIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datePickDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eShopManagementDataSet2 = new WindowsFormFinalProject.eShopManagementDataSet2();
+            this.billBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagementDataSet1 = new WindowsFormFinalProject.eShopManagementDataSet1();
+            this.billTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet1TableAdapters.BillTableAdapter();
             this.billDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagementDataSet2 = new WindowsFormFinalProject.eShopManagementDataSet2();
             this.billDetailTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet2TableAdapters.BillDetailTableAdapter();
-            this.prdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.billIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxFindBill = new System.Windows.Forms.TextBox();
+            this.dataGridDetailBill = new System.Windows.Forms.DataGridView();
+            this.btnFindBillDetail = new XanderUI.XUIButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billDetailBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridDetailBill)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridBill
@@ -64,26 +63,12 @@ namespace WindowsFormFinalProject.Menu
             this.cusIDDataGridViewTextBoxColumn,
             this.datePickDataGridViewTextBoxColumn});
             this.dataGridBill.DataSource = this.billBindingSource;
-            this.dataGridBill.Location = new System.Drawing.Point(64, 121);
+            this.dataGridBill.Location = new System.Drawing.Point(68, 157);
             this.dataGridBill.Name = "dataGridBill";
             this.dataGridBill.RowHeadersWidth = 51;
             this.dataGridBill.RowTemplate.Height = 24;
             this.dataGridBill.Size = new System.Drawing.Size(410, 308);
             this.dataGridBill.TabIndex = 0;
-            // 
-            // eShopManagementDataSet1
-            // 
-            this.eShopManagementDataSet1.DataSetName = "eShopManagementDataSet1";
-            this.eShopManagementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // billBindingSource
-            // 
-            this.billBindingSource.DataMember = "Bill";
-            this.billBindingSource.DataSource = this.eShopManagementDataSet1;
-            // 
-            // billTableAdapter
-            // 
-            this.billTableAdapter.ClearBeforeFill = true;
             // 
             // billIDDataGridViewTextBoxColumn
             // 
@@ -117,86 +102,109 @@ namespace WindowsFormFinalProject.Menu
             this.datePickDataGridViewTextBoxColumn.Name = "datePickDataGridViewTextBoxColumn";
             this.datePickDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridView1
+            // billBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.prdIDDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.billIDDataGridViewTextBoxColumn1});
-            this.dataGridView1.DataSource = this.billDetailBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(521, 121);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(554, 308);
-            this.dataGridView1.TabIndex = 1;
+            this.billBindingSource.DataMember = "Bill";
+            this.billBindingSource.DataSource = this.eShopManagementDataSet1;
             // 
-            // eShopManagementDataSet2
+            // eShopManagementDataSet1
             // 
-            this.eShopManagementDataSet2.DataSetName = "eShopManagementDataSet2";
-            this.eShopManagementDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.eShopManagementDataSet1.DataSetName = "eShopManagementDataSet1";
+            this.eShopManagementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // billTableAdapter
+            // 
+            this.billTableAdapter.ClearBeforeFill = true;
             // 
             // billDetailBindingSource
             // 
             this.billDetailBindingSource.DataMember = "BillDetail";
             this.billDetailBindingSource.DataSource = this.eShopManagementDataSet2;
             // 
+            // eShopManagementDataSet2
+            // 
+            this.eShopManagementDataSet2.DataSetName = "eShopManagementDataSet2";
+            this.eShopManagementDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // billDetailTableAdapter
             // 
             this.billDetailTableAdapter.ClearBeforeFill = true;
             // 
-            // prdIDDataGridViewTextBoxColumn
+            // textBoxFindBill
             // 
-            this.prdIDDataGridViewTextBoxColumn.DataPropertyName = "prdID";
-            this.prdIDDataGridViewTextBoxColumn.HeaderText = "prdID";
-            this.prdIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.prdIDDataGridViewTextBoxColumn.Name = "prdIDDataGridViewTextBoxColumn";
-            this.prdIDDataGridViewTextBoxColumn.Width = 125;
+            this.textBoxFindBill.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxFindBill.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFindBill.Location = new System.Drawing.Point(360, 72);
+            this.textBoxFindBill.Name = "textBoxFindBill";
+            this.textBoxFindBill.Size = new System.Drawing.Size(184, 36);
+            this.textBoxFindBill.TabIndex = 3;
+            this.textBoxFindBill.TextChanged += new System.EventHandler(this.textBoxFindBill_TextChanged);
             // 
-            // quantityDataGridViewTextBoxColumn
+            // dataGridDetailBill
             // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
-            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            this.quantityDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridDetailBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridDetailBill.Location = new System.Drawing.Point(581, 157);
+            this.dataGridDetailBill.Name = "dataGridDetailBill";
+            this.dataGridDetailBill.RowHeadersWidth = 51;
+            this.dataGridDetailBill.RowTemplate.Height = 24;
+            this.dataGridDetailBill.Size = new System.Drawing.Size(495, 308);
+            this.dataGridDetailBill.TabIndex = 4;
             // 
-            // priceDataGridViewTextBoxColumn
+            // btnFindBillDetail
             // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.Width = 125;
+            this.btnFindBillDetail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnFindBillDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnFindBillDetail.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_search_for_love_96_1_;
+            this.btnFindBillDetail.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnFindBillDetail.ButtonText = "Search";
+            this.btnFindBillDetail.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnFindBillDetail.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindBillDetail.CornerRadius = 5;
+            this.btnFindBillDetail.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindBillDetail.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindBillDetail.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnFindBillDetail.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindBillDetail.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnFindBillDetail.Location = new System.Drawing.Point(566, 72);
+            this.btnFindBillDetail.Name = "btnFindBillDetail";
+            this.btnFindBillDetail.Size = new System.Drawing.Size(125, 36);
+            this.btnFindBillDetail.TabIndex = 2;
+            this.btnFindBillDetail.TextColor = System.Drawing.Color.Black;
+            this.btnFindBillDetail.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindBillDetail.Click += new System.EventHandler(this.btnFindBillDetail_Click);
             // 
-            // billIDDataGridViewTextBoxColumn1
+            // label1
             // 
-            this.billIDDataGridViewTextBoxColumn1.DataPropertyName = "billID";
-            this.billIDDataGridViewTextBoxColumn1.HeaderText = "billID";
-            this.billIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.billIDDataGridViewTextBoxColumn1.Name = "billIDDataGridViewTextBoxColumn1";
-            this.billIDDataGridViewTextBoxColumn1.Width = 125;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(63, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 28);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Find Bill Detail";
             // 
             // Bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 576);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridDetailBill);
+            this.Controls.Add(this.textBoxFindBill);
+            this.Controls.Add(this.btnFindBillDetail);
             this.Controls.Add(this.dataGridBill);
             this.Name = "Bill";
             this.Text = "Bill";
             this.Load += new System.EventHandler(this.Bill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.billBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.billDetailBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridDetailBill)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -210,13 +218,12 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.DataGridViewTextBoxColumn empIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cusIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datePickDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private eShopManagementDataSet2 eShopManagementDataSet2;
         private System.Windows.Forms.BindingSource billDetailBindingSource;
         private eShopManagementDataSet2TableAdapters.BillDetailTableAdapter billDetailTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prdIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn billIDDataGridViewTextBoxColumn1;
+        private XanderUI.XUIButton btnFindBillDetail;
+        private System.Windows.Forms.TextBox textBoxFindBill;
+        private System.Windows.Forms.DataGridView dataGridDetailBill;
+        private System.Windows.Forms.Label label1;
     }
 }

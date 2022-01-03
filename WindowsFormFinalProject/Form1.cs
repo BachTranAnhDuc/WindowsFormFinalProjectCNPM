@@ -32,7 +32,7 @@ namespace WindowsFormFinalProject
             String result = "";
             try
             {
-                con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManager;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
                 cmd = new SqlCommand("select * from Employee where uname = @uname and pwd = @pwd", con);
                 con.Open();
                 cmd.Parameters.AddWithValue("@uname", usernameInput.Text.ToString());
