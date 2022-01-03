@@ -37,3 +37,9 @@ D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\W
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.StatisticCateWare.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.StatisticOut.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.AssemblyReference.cache
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.DataSet.dll
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.dll
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.pdb
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.xml
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\ExcelDataReader.DataSet.xml

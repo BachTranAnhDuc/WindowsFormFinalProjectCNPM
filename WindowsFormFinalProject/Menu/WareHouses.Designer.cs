@@ -59,6 +59,7 @@ namespace WindowsFormFinalProject.Menu
             this.wareHouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eShopManagementDataSet = new WindowsFormFinalProject.eShopManagementDataSet();
             this.wareHouseTableAdapter = new WindowsFormFinalProject.eShopManagementDataSetTableAdapters.wareHouseTableAdapter();
+            this.xuiButtonExecl = new XanderUI.XUIButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wareHouseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet)).BeginInit();
@@ -363,11 +364,34 @@ namespace WindowsFormFinalProject.Menu
             // 
             this.wareHouseTableAdapter.ClearBeforeFill = true;
             // 
+            // xuiButtonExecl
+            // 
+            this.xuiButtonExecl.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButtonExecl.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_xls_96;
+            this.xuiButtonExecl.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButtonExecl.ButtonText = "Export";
+            this.xuiButtonExecl.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButtonExecl.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButtonExecl.CornerRadius = 5;
+            this.xuiButtonExecl.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiButtonExecl.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButtonExecl.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButtonExecl.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButtonExecl.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButtonExecl.Location = new System.Drawing.Point(959, 497);
+            this.xuiButtonExecl.Name = "xuiButtonExecl";
+            this.xuiButtonExecl.Size = new System.Drawing.Size(147, 45);
+            this.xuiButtonExecl.TabIndex = 81;
+            this.xuiButtonExecl.TextColor = System.Drawing.Color.Black;
+            this.xuiButtonExecl.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButtonExecl.Click += new System.EventHandler(this.xuiButtonExecl_Click);
+            // 
             // WareHouses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 576);
+            this.Controls.Add(this.xuiButtonExecl);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.prdEmID);
@@ -429,5 +453,6 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.DataGridViewTextBoxColumn priceOutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
+        private XanderUI.XUIButton xuiButtonExecl;
     }
 }

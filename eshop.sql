@@ -234,6 +234,15 @@ select prdID, price from BillDetail
 
 select categoryName, sum(priceIn) as 'total' from wareHouse group by categoryName
 
+select Product.nameCate, sum(BillDetail.price) as 'total' from BillDetail
+inner join Product
+on BillDetail.prdID = Product.productID
+group by Product.nameCate
+
+select Product.nameCate, sum(BillDetail.price) as 'total' from BillDetail inner join Product on BillDetail.prdID = Product.productID group by Product.nameCate
+
+
+
 
 
 
