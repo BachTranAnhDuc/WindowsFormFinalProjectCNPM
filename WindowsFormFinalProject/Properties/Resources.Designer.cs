@@ -213,9 +213,29 @@ namespace WindowsFormFinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rubik {
+            get {
+                object obj = ResourceManager.GetObject("Rubik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rubik_logo {
             get {
                 object obj = ResourceManager.GetObject("rubik-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubik1 {
+            get {
+                object obj = ResourceManager.GetObject("Rubik1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

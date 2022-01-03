@@ -310,6 +310,8 @@
     <Content Include="Resources\password-1.png" />
     <Content Include="Resources\password-2.png" />
     <None Include="Resources\rubik-logo.png" />
+    <None Include="Resources\Rubik.png" />
+    <None Include="Resources\Rubik1.png" />
     <Content Include="Resources\username-1.png" />
     <Content Include="Resources\username-2.png" />
   </ItemGroup>

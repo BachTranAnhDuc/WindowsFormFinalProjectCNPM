@@ -29,7 +29,7 @@ namespace WindowsFormFinalProject
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            label2.Text = f1.SetValueForText1;
+            /*label2.Text = f1.SetValueForText1;*/
         }
 
         private void OpenChildForm(Form childForm)
