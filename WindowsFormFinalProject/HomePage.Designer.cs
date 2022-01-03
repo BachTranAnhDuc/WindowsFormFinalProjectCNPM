@@ -184,6 +184,7 @@ namespace WindowsFormFinalProject
             this.btnLogOut.TabIndex = 7;
             this.btnLogOut.TextColor = System.Drawing.Color.GhostWhite;
             this.btnLogOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnStatistic
             // 

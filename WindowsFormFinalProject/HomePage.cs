@@ -209,5 +209,13 @@ namespace WindowsFormFinalProject
             btnStatistic.BackgroundColor = myRgbColor;
             btnLogOut.BackgroundColor = myRgbColor;
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+
+            /*Form1 f1 = new Form1();
+            f1.Show();*/
+        }
     }
 }
