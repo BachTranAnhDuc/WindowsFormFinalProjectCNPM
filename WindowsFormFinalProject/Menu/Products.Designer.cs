@@ -30,26 +30,29 @@ namespace WindowsFormFinalProject.Menu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eShopManagementDataSet3 = new WindowsFormFinalProject.eShopManagementDataSet3();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet3TableAdapters.ProductTableAdapter();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namePrdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagementDataSet3 = new WindowsFormFinalProject.eShopManagementDataSet3();
+            this.productTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet3TableAdapters.ProductTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.eShopManagementDataSet4 = new WindowsFormFinalProject.eShopManagementDataSet4();
-            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoryTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet4TableAdapters.CategoryTableAdapter();
             this.nameCateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagementDataSet4 = new WindowsFormFinalProject.eShopManagementDataSet4();
+            this.categoryTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet4TableAdapters.CategoryTableAdapter();
+            this.btnFindProductCate = new XanderUI.XUIButton();
+            this.textBoxFindProductCate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,26 +66,12 @@ namespace WindowsFormFinalProject.Menu
             this.nameCateDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(427, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(427, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(641, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(641, 303);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // eShopManagementDataSet3
-            // 
-            this.eShopManagementDataSet3.DataSetName = "eShopManagementDataSet3";
-            this.eShopManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataMember = "Product";
-            this.productBindingSource.DataSource = this.eShopManagementDataSet3;
-            // 
-            // productTableAdapter
-            // 
-            this.productTableAdapter.ClearBeforeFill = true;
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -124,6 +113,20 @@ namespace WindowsFormFinalProject.Menu
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.Width = 125;
             // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataMember = "Product";
+            this.productBindingSource.DataSource = this.eShopManagementDataSet3;
+            // 
+            // eShopManagementDataSet3
+            // 
+            this.eShopManagementDataSet3.DataSetName = "eShopManagementDataSet3";
+            this.eShopManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productTableAdapter
+            // 
+            this.productTableAdapter.ClearBeforeFill = true;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
@@ -131,26 +134,12 @@ namespace WindowsFormFinalProject.Menu
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameCateDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.categoryBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(116, 88);
+            this.dataGridView2.Location = new System.Drawing.Point(116, 160);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(176, 336);
+            this.dataGridView2.Size = new System.Drawing.Size(176, 303);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // eShopManagementDataSet4
-            // 
-            this.eShopManagementDataSet4.DataSetName = "eShopManagementDataSet4";
-            this.eShopManagementDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoryBindingSource
-            // 
-            this.categoryBindingSource.DataMember = "Category";
-            this.categoryBindingSource.DataSource = this.eShopManagementDataSet4;
-            // 
-            // categoryTableAdapter
-            // 
-            this.categoryTableAdapter.ClearBeforeFill = true;
             // 
             // nameCateDataGridViewTextBoxColumn1
             // 
@@ -160,23 +149,68 @@ namespace WindowsFormFinalProject.Menu
             this.nameCateDataGridViewTextBoxColumn1.Name = "nameCateDataGridViewTextBoxColumn1";
             this.nameCateDataGridViewTextBoxColumn1.Width = 125;
             // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataMember = "Category";
+            this.categoryBindingSource.DataSource = this.eShopManagementDataSet4;
+            // 
+            // eShopManagementDataSet4
+            // 
+            this.eShopManagementDataSet4.DataSetName = "eShopManagementDataSet4";
+            this.eShopManagementDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoryTableAdapter
+            // 
+            this.categoryTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnFindProductCate
+            // 
+            this.btnFindProductCate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnFindProductCate.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnFindProductCate.ButtonImage")));
+            this.btnFindProductCate.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnFindProductCate.ButtonText = "Button";
+            this.btnFindProductCate.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnFindProductCate.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindProductCate.CornerRadius = 5;
+            this.btnFindProductCate.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindProductCate.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnFindProductCate.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindProductCate.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnFindProductCate.Location = new System.Drawing.Point(606, 46);
+            this.btnFindProductCate.Name = "btnFindProductCate";
+            this.btnFindProductCate.Size = new System.Drawing.Size(191, 67);
+            this.btnFindProductCate.TabIndex = 2;
+            this.btnFindProductCate.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindProductCate.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindProductCate.Click += new System.EventHandler(this.btnFindProductCate_Click);
+            // 
+            // textBoxFindProductCate
+            // 
+            this.textBoxFindProductCate.Location = new System.Drawing.Point(320, 66);
+            this.textBoxFindProductCate.Name = "textBoxFindProductCate";
+            this.textBoxFindProductCate.Size = new System.Drawing.Size(216, 22);
+            this.textBoxFindProductCate.TabIndex = 3;
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 576);
+            this.Controls.Add(this.textBoxFindProductCate);
+            this.Controls.Add(this.btnFindProductCate);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Products";
             this.Text = "Products";
             this.Load += new System.EventHandler(this.Products_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -196,5 +230,7 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.BindingSource categoryBindingSource;
         private eShopManagementDataSet4TableAdapters.CategoryTableAdapter categoryTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameCateDataGridViewTextBoxColumn1;
+        private XanderUI.XUIButton btnFindProductCate;
+        private System.Windows.Forms.TextBox textBoxFindProductCate;
     }
 }

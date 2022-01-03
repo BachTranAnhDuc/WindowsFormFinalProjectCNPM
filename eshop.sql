@@ -80,6 +80,10 @@ alter table wareHouse
 add constraint FK_Ware_Prd
 foreign key (productID) references Product(productID);
 
+alter table wareHouse
+add constraint FK_Ware_Cate
+foreign key (categoryName) references Category(nameCate);
+
 alter table Product
 add constraint FK_Prd_Cate 
 foreign key (nameCate) references Category(nameCate);
@@ -165,6 +169,13 @@ insert into BillDetail (prdID, quantity, price, billID) values ('prd006', 1, 34,
 insert into BillDetail (prdID, quantity, price, billID) values ('prd007', 1, 89, 'bill002');
 insert into BillDetail (prdID, quantity, price, billID) values ('prd008', 1, 99, 'bill002');
 
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd001', 'Rubik 2x2 Gan', 20, '6000', '6200', '2x2', '001');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd002', 'Rubik 3x3 Dayan', 30, '7000', '7300', '3x3', '002');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd003', 'Rubik 3x3 Gan 11 M Pro Frosted Black', 20, '7500', '8000', '3x3', '001');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd004', 'Rubik 4x4 Gan', 10, '4000', '4200', '4x4', '003');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd005', 'Rubik 5x5 Valk', 10, '4500', '4700', '5x5', '001');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd006', 'Rubik Clock', 15, '3500', '3700', 'clock', '002');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd007', 'Rubik Megaminx Gan', 40, '8000', '8200', 'megaminx', '003');
 
 
 
@@ -178,12 +189,10 @@ select * from Category;
 
 
 
-select * from wareHouse
+select sum(quantity) as 'Quantity' from wareHouse
 inner join Product
 on wareHouse.productID = Product.productID
-inner join Category
-on Product.nameCate = Category.nameCate
-where Category.nameCate = '2x2'
+where Product.nameCate = '3x3'
 
 
 

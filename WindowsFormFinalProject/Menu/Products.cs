@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,12 @@ namespace WindowsFormFinalProject.Menu
             InitializeComponent();
         }
 
+        SqlCommand cmd;
+        SqlDataReader reader;
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
+
+
+
         private void Products_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'eShopManagementDataSet4.Category' table. You can move, or remove it, as needed.
@@ -24,6 +31,12 @@ namespace WindowsFormFinalProject.Menu
             // TODO: This line of code loads data into the 'eShopManagementDataSet3.Product' table. You can move, or remove it, as needed.
             this.productTableAdapter.Fill(this.eShopManagementDataSet3.Product);
 
+        }
+
+        private void btnFindProductCate_Click(object sender, EventArgs e)
+        {
+            ProductDetail prd2 = new ProductDetail();
+            prd2.ShowDialog();
         }
     }
 }
