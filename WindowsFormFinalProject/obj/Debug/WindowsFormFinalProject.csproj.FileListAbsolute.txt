@@ -34,3 +34,6 @@ D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\W
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Statistic.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.ProductDetail.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.CustomerBill.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.StatisticBill.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.StatisticCateWare.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.StatisticOut.resources

@@ -141,9 +141,9 @@ insert into Product (productID, namePrd, img, nameCate, price) values ('prd007',
 insert into Product (productID, namePrd, img, nameCate, price) values ('prd008', 'Rubk Mirror', 'some text', 'mirror', 10);
 insert into Product (productID, namePrd, img, nameCate, price) values ('prd009', 'Rubik Pyraminx Gan', 'some text', 'pyraminx', 19);
 insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'Rubik Skew-b Gan', 'some text', 'skew-b', 25);
-insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'GoCube Bluetooth', 'some text', 'bluetooth', 199);
-insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'CuberSpeed ​​YJ Axis V2', 'some text', 'YJ', 16);
-insert into Product (productID, namePrd, img, nameCate, price) values ('prd010', 'CuberSpeed Twist 3x3 stickerelss', 'some text', 'Twist', 14);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd011', 'GoCube Bluetooth', 'some text', 'bluetooth', 199);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd012', 'CuberSpeed ​​YJ Axis V2', 'some text', 'YJ', 16);
+insert into Product (productID, namePrd, img, nameCate, price) values ('prd013', 'CuberSpeed Twist 3x3 stickerelss', 'some text', 'Twist', 14);
 
 
 insert into Customer (cusID, username, passwords, nameCus, addressCus) values ('cus001', 'usernamecustomer1', '123456789', 'Name Shop 001', 'Ho Chi Minh City');
@@ -169,6 +169,11 @@ insert into BillDetail (prdID, quantity, price, billID) values ('prd006', 1, 34,
 insert into BillDetail (prdID, quantity, price, billID) values ('prd007', 1, 89, 'bill002');
 insert into BillDetail (prdID, quantity, price, billID) values ('prd008', 1, 99, 'bill002');
 
+insert into BillDetail (prdID, quantity, price, billID) values ('prd012', 2, 32, 'bill003');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd011', 3, 597, 'bill003');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd010', 4, 100, 'bill003');
+insert into BillDetail (prdID, quantity, price, billID) values ('prd013', 3, 42, 'bill003');
+
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd001', 'Rubik 2x2 Gan', 20, '6000', '6200', '2x2', '001');
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd002', 'Rubik 3x3 Dayan', 30, '7000', '7300', '3x3', '002');
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd003', 'Rubik 3x3 Gan 11 M Pro Frosted Black', 20, '7500', '8000', '3x3', '001');
@@ -189,24 +194,45 @@ select * from BillDetail;
 select * from Category;
 
 
-
+-- Query to caculate quantity of category
 select sum(quantity) as 'Quantity' from wareHouse 
 inner join Product 
 on wareHouse.productID = Product.productID 
 where Product.nameCate = '3x3'
 
-select distinct Product.productID, Product.namePrd, Product.nameCate, wareHouse.quantity from Product
+
+-- Query to find detail category
+select Product.productID, Product.namePrd, Product.nameCate, wareHouse.quantity from Product
 inner join Category
 on Product.nameCate = Category.nameCate
 inner join wareHouse
-on Category.nameCate = wareHouse.categoryName
+on Product.productID = wareHouse.productID
 where Product.nameCate = '3x3'
 
+select Product.productID, Product.namePrd, Product.nameCate, wareHouse.quantity from Product inner join Category on Product.nameCate = Category.nameCate inner join wareHouse on Product.productID = wareHouse.productID where Product.nameCate = '3x3'
 
 
+-- Query to find Customer's detail bill
+select Customer.cusID, Customer.nameCus, Bill.billID, Bill.empID, Bill.datePick from Customer
+inner join Bill
+on Customer.cusID = Bill.cusID
+where Customer.cusID = 'cus002'
+
+select Customer.cusID, Customer.nameCus, Bill.billID, Bill.empID, Bill.datePick from Customer inner join Bill on Customer.cusID = Bill.cusID where Customer.cusID = 'cus002'
 
 
+-- Query to find total priceIn from wareHouse
+select productID, priceIn from wareHouse
 
+select sum(priceIn) as 'Total' from wareHouse
+
+select prdID, sum(price) as 'total' from BillDetail
+group by prdID
+
+
+select prdID, price from BillDetail
+
+select categoryName, sum(priceIn) as 'total' from wareHouse group by categoryName
 
 
 
