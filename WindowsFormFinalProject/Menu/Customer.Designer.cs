@@ -31,17 +31,20 @@ namespace WindowsFormFinalProject.Menu
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eShopManagementDataSet5 = new WindowsFormFinalProject.eShopManagementDataSet5();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet5TableAdapters.CustomerTableAdapter();
             this.cusIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressCusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eShopManagementDataSet5 = new WindowsFormFinalProject.eShopManagementDataSet5();
+            this.customerTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet5TableAdapters.CustomerTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxFindCus = new System.Windows.Forms.TextBox();
+            this.btnFindCusDetail = new XanderUI.XUIButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,26 +58,12 @@ namespace WindowsFormFinalProject.Menu
             this.nameCusDataGridViewTextBoxColumn,
             this.addressCusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.customerBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(242, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(250, 172);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(676, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 362);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // eShopManagementDataSet5
-            // 
-            this.eShopManagementDataSet5.DataSetName = "eShopManagementDataSet5";
-            this.eShopManagementDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataMember = "Customer";
-            this.customerBindingSource.DataSource = this.eShopManagementDataSet5;
-            // 
-            // customerTableAdapter
-            // 
-            this.customerTableAdapter.ClearBeforeFill = true;
             // 
             // cusIDDataGridViewTextBoxColumn
             // 
@@ -116,19 +105,81 @@ namespace WindowsFormFinalProject.Menu
             this.addressCusDataGridViewTextBoxColumn.Name = "addressCusDataGridViewTextBoxColumn";
             this.addressCusDataGridViewTextBoxColumn.Width = 125;
             // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "Customer";
+            this.customerBindingSource.DataSource = this.eShopManagementDataSet5;
+            // 
+            // eShopManagementDataSet5
+            // 
+            this.eShopManagementDataSet5.DataSetName = "eShopManagementDataSet5";
+            this.eShopManagementDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(247, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 28);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Customer";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBoxFindCus
+            // 
+            this.textBoxFindCus.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxFindCus.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFindCus.Location = new System.Drawing.Point(439, 78);
+            this.textBoxFindCus.Name = "textBoxFindCus";
+            this.textBoxFindCus.Size = new System.Drawing.Size(184, 36);
+            this.textBoxFindCus.TabIndex = 7;
+            // 
+            // btnFindCusDetail
+            // 
+            this.btnFindCusDetail.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnFindCusDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnFindCusDetail.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_search_for_love_96_1_;
+            this.btnFindCusDetail.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnFindCusDetail.ButtonText = "Search";
+            this.btnFindCusDetail.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnFindCusDetail.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindCusDetail.CornerRadius = 5;
+            this.btnFindCusDetail.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindCusDetail.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindCusDetail.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnFindCusDetail.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindCusDetail.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnFindCusDetail.Location = new System.Drawing.Point(643, 78);
+            this.btnFindCusDetail.Name = "btnFindCusDetail";
+            this.btnFindCusDetail.Size = new System.Drawing.Size(125, 36);
+            this.btnFindCusDetail.TabIndex = 6;
+            this.btnFindCusDetail.TextColor = System.Drawing.Color.Black;
+            this.btnFindCusDetail.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnFindCusDetail.Click += new System.EventHandler(this.btnFindCusDetail_Click);
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 576);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxFindCus);
+            this.Controls.Add(this.btnFindCusDetail);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Customer";
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -143,5 +194,8 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameCusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressCusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxFindCus;
+        private XanderUI.XUIButton btnFindCusDetail;
     }
 }
