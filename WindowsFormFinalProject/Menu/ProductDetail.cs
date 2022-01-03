@@ -36,10 +36,15 @@ namespace WindowsFormFinalProject.Menu
 
         private void dataGridProductDetail_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void xuiButton1Load_Click(object sender, EventArgs e)
+        {
             con.Open();
             string sql = "select sum(quantity) as 'Quantity' from wareHouse inner join Product on wareHouse.productID = Product.productID where Product.nameCate like N'%" + label1.Text + "%'";
 
-            SqlCommand com = new SqlCommand(sql, con);
+            cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 

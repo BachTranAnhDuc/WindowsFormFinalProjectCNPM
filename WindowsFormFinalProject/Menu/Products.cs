@@ -18,10 +18,6 @@ namespace WindowsFormFinalProject.Menu
             InitializeComponent();
         }
 
-        public string MyValue
-        {
-            get { return textBoxFindProductCate.Text; }
-        }
 
         SqlCommand cmd;
         SqlDataReader reader;
