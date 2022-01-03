@@ -29,7 +29,19 @@ namespace WindowsFormFinalProject
 
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+
+
+        private void iconMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             String result = "";
             SetValueForText1 = usernameInput.Text.ToString();
@@ -77,16 +89,6 @@ namespace WindowsFormFinalProject
             {
                 MessageBox.Show(result);
             }
-        }
-
-        private void iconMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void iconExit_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

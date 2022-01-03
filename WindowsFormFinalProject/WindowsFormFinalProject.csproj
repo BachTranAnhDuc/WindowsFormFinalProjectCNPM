@@ -318,6 +318,7 @@
     <None Include="Resources\icons8-tv-show-96.png" />
     <None Include="Resources\icons8-view-details-96.png" />
     <None Include="Resources\icons8-xls-96.png" />
+    <None Include="Resources\icons8-login-96%281%29.png" />
     <Content Include="Resources\logo100.png" />
     <Content Include="Resources\logo200.png" />
     <Content Include="Resources\password-1.png" />
@@ -328,6 +329,7 @@
     <None Include="Resources\Rubik Shop.png" />
     <None Include="Resources\Rubik Shop%281%29.png" />
     <None Include="Resources\Rubik Shop%282%29.png" />
+    <None Include="Resources\Rubik Shop%283%29.png" />
     <Content Include="Resources\username-1.png" />
     <Content Include="Resources\username-2.png" />
   </ItemGroup>

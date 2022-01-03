@@ -133,6 +133,16 @@ namespace WindowsFormFinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_96_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-96(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_logout_rounded_left_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-rounded-left-96", resourceCulture);
@@ -276,6 +286,16 @@ namespace WindowsFormFinalProject.Properties {
         internal static System.Drawing.Bitmap Rubik_Shop_2_ {
             get {
                 object obj = ResourceManager.GetObject("Rubik Shop(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubik_Shop_3_ {
+            get {
+                object obj = ResourceManager.GetObject("Rubik Shop(3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
