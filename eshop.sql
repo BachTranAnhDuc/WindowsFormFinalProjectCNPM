@@ -195,6 +195,13 @@ inner join Product
 on wareHouse.productID = Product.productID 
 where Product.nameCate = '3x3'
 
+select distinct Product.productID, Product.namePrd, Product.nameCate, wareHouse.quantity from Product
+inner join Category
+on Product.nameCate = Category.nameCate
+inner join wareHouse
+on Category.nameCate = wareHouse.categoryName
+where Product.nameCate = '3x3'
+
 
 
 

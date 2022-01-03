@@ -30,7 +30,6 @@ namespace WindowsFormFinalProject.Menu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namePrdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -165,30 +164,32 @@ namespace WindowsFormFinalProject.Menu
             // 
             // btnFindProductCate
             // 
-            this.btnFindProductCate.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnFindProductCate.ButtonImage = ((System.Drawing.Image)(resources.GetObject("btnFindProductCate.ButtonImage")));
+            this.btnFindProductCate.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnFindProductCate.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_search_for_love_96_1_;
             this.btnFindProductCate.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btnFindProductCate.ButtonText = "Button";
+            this.btnFindProductCate.ButtonText = "Search";
             this.btnFindProductCate.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.btnFindProductCate.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.btnFindProductCate.CornerRadius = 5;
+            this.btnFindProductCate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFindProductCate.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.btnFindProductCate.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnFindProductCate.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnFindProductCate.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnFindProductCate.Location = new System.Drawing.Point(606, 46);
+            this.btnFindProductCate.Location = new System.Drawing.Point(362, 56);
             this.btnFindProductCate.Name = "btnFindProductCate";
-            this.btnFindProductCate.Size = new System.Drawing.Size(191, 67);
+            this.btnFindProductCate.Size = new System.Drawing.Size(119, 36);
             this.btnFindProductCate.TabIndex = 2;
-            this.btnFindProductCate.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btnFindProductCate.TextColor = System.Drawing.Color.Black;
             this.btnFindProductCate.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnFindProductCate.Click += new System.EventHandler(this.btnFindProductCate_Click);
             // 
             // textBoxFindProductCate
             // 
-            this.textBoxFindProductCate.Location = new System.Drawing.Point(320, 66);
+            this.textBoxFindProductCate.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFindProductCate.Location = new System.Drawing.Point(116, 56);
             this.textBoxFindProductCate.Name = "textBoxFindProductCate";
-            this.textBoxFindProductCate.Size = new System.Drawing.Size(216, 22);
+            this.textBoxFindProductCate.Size = new System.Drawing.Size(216, 36);
             this.textBoxFindProductCate.TabIndex = 3;
             // 
             // Products

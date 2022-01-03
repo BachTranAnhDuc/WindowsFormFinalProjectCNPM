@@ -53,5 +53,20 @@ namespace WindowsFormFinalProject.Menu
             con.Close();
             dataGridProductDetail.DataSource = dt;
         }
+
+        private void xuiButtonDetailPrd_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string sql = "select Product.productID, Product.namePrd, Product.nameCate, wareHouse.quantity from Product inner join Category on Product.nameCate = Category.nameCate inner join wareHouse on Product.productID = wareHouse.productID where Product.nameCate like N'%" + label1.Text + "%'";
+
+            cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            dataGridDetailPrd.DataSource = dt;
+        }
     }
 }
