@@ -176,6 +176,7 @@ insert into wareHouse (productID, productName, quantity, priceIn, priceOut, cate
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd005', 'Rubik 5x5 Valk', 10, '4500', '4700', '5x5', '001');
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd006', 'Rubik Clock', 15, '3500', '3700', 'clock', '002');
 insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd007', 'Rubik Megaminx Gan', 40, '8000', '8200', 'megaminx', '003');
+insert into wareHouse (productID, productName, quantity, priceIn, priceOut, categoryName, employeeID) values ('prd008', 'Rubik Megaminx Gan', 40, '8000', '8200', 'megaminx', '003');
 
 
 
@@ -189,9 +190,9 @@ select * from Category;
 
 
 
-select sum(quantity) as 'Quantity' from wareHouse
-inner join Product
-on wareHouse.productID = Product.productID
+select sum(quantity) as 'Quantity' from wareHouse 
+inner join Product 
+on wareHouse.productID = Product.productID 
 where Product.nameCate = '3x3'
 
 

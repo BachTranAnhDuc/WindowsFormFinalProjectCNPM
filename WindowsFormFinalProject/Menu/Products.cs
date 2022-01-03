@@ -18,6 +18,11 @@ namespace WindowsFormFinalProject.Menu
             InitializeComponent();
         }
 
+        public string MyValue
+        {
+            get { return textBoxFindProductCate.Text; }
+        }
+
         SqlCommand cmd;
         SqlDataReader reader;
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
@@ -35,7 +40,7 @@ namespace WindowsFormFinalProject.Menu
 
         private void btnFindProductCate_Click(object sender, EventArgs e)
         {
-            ProductDetail prd2 = new ProductDetail();
+            ProductDetail prd2 = new ProductDetail(textBoxFindProductCate.Text);
             prd2.ShowDialog();
         }
     }

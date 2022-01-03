@@ -14,8 +14,6 @@ namespace WindowsFormFinalProject.Menu
     public partial class Bill : Form
     {
 /*        SqlConnection con;*/
-        SqlCommand cmd;
-        SqlDataReader reader;
 
         public Bill()
         {
@@ -23,6 +21,9 @@ namespace WindowsFormFinalProject.Menu
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
+        SqlCommand cmd;
+
+
 
         private void Bill_Load(object sender, EventArgs e)
         {
@@ -38,7 +39,7 @@ namespace WindowsFormFinalProject.Menu
             con.Open();
             string sql = "select * from BillDetail";
 
-            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd = new SqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
@@ -52,9 +53,9 @@ namespace WindowsFormFinalProject.Menu
         {
             con.Open();
             string sql = "select * from BillDetail where billID like N'%" + this.textBoxFindBill.Text + "%'";
-            SqlCommand com = new SqlCommand(sql, con);
-            com.CommandType = CommandType.Text;
-            SqlDataAdapter da = new SqlDataAdapter(com);
+            cmd = new SqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             DataTable dt = new DataTable();
             da.Fill(dt);

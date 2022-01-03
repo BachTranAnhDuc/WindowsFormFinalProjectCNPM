@@ -32,3 +32,4 @@ D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\W
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Products.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Customer.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.Statistic.resources
+D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.ProductDetail.resources

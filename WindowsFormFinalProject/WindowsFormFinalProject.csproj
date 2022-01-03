@@ -150,6 +150,9 @@
     <EmbeddedResource Include="Menu\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu\ProductDetail.resx">
+      <DependentUpon>ProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
