@@ -29,9 +29,9 @@ namespace WindowsFormFinalProject.Menu
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.xuiButton2 = new XanderUI.XUIButton();
@@ -52,17 +52,17 @@ namespace WindowsFormFinalProject.Menu
             // 
             // Chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.Chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.Chart1.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.Chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.Chart1.Legends.Add(legend4);
             this.Chart1.Location = new System.Drawing.Point(94, 132);
             this.Chart1.Name = "Chart1";
             this.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "priceIn";
-            this.Chart1.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "priceIn";
+            this.Chart1.Series.Add(series4);
             this.Chart1.Size = new System.Drawing.Size(614, 393);
             this.Chart1.TabIndex = 8;
             this.Chart1.Text = "chart1";
@@ -72,7 +72,7 @@ namespace WindowsFormFinalProject.Menu
             this.xuiButton2.BackgroundColor = System.Drawing.Color.Transparent;
             this.xuiButton2.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_tv_show_96;
             this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton2.ButtonText = "Show1";
+            this.xuiButton2.ButtonText = "Show";
             this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.CornerRadius = 5;
@@ -94,7 +94,7 @@ namespace WindowsFormFinalProject.Menu
             this.xuiButton1.BackgroundColor = System.Drawing.Color.Transparent;
             this.xuiButton1.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_view_details_96;
             this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "View1";
+            this.xuiButton1.ButtonText = "View";
             this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.CornerRadius = 5;

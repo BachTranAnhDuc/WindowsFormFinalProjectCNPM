@@ -18,7 +18,6 @@ D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\W
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\WindowsFormFinalProject.pdb
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\FontAwesome.Sharp.dll
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\bin\Debug\XanderUI.dll
-D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.csproj.AssemblyReference.cache
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Form1.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.HomePage.resources
 D:\Study\Winform\WindowsFormFinalProjectCNPM\WindowsFormFinalProject\obj\Debug\WindowsFormFinalProject.Menu.WareHouses.resources
