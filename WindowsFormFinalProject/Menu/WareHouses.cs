@@ -110,7 +110,7 @@ namespace WindowsFormFinalProject.Menu
                 }
             }
             // save the application  
-            workbook.SaveAs("D:\\Study\\Winform\\WindowsFormFinalProjectCNPM\\output.xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            workbook.SaveAs("D:\\Study\\Winform\\WindowsFormFinalProjectCNPM\\outputWareHouse.xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
             // Exit from the application  
             app.Quit();
         }

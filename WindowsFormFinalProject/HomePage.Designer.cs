@@ -33,10 +33,12 @@ namespace WindowsFormFinalProject
             this.logo = new System.Windows.Forms.Panel();
             this.xuiClock1 = new XanderUI.XUIClock();
             this.navBar = new System.Windows.Forms.Panel();
-            this.textHead = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textHead = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconExit = new FontAwesome.Sharp.IconButton();
@@ -51,6 +53,7 @@ namespace WindowsFormFinalProject
             this.logo.SuspendLayout();
             this.navBar.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideBar
@@ -115,16 +118,15 @@ namespace WindowsFormFinalProject
             this.navBar.Size = new System.Drawing.Size(1152, 130);
             this.navBar.TabIndex = 1;
             // 
-            // textHead
+            // panel1
             // 
-            this.textHead.AutoSize = true;
-            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textHead.Location = new System.Drawing.Point(45, 49);
-            this.textHead.Name = "textHead";
-            this.textHead.Size = new System.Drawing.Size(204, 39);
-            this.textHead.TabIndex = 7;
-            this.textHead.Text = "Home Page";
+            this.panel1.Controls.Add(this.iconMinimize);
+            this.panel1.Controls.Add(this.iconExit);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1039, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(113, 130);
+            this.panel1.TabIndex = 10;
             // 
             // label1
             // 
@@ -137,25 +139,48 @@ namespace WindowsFormFinalProject
             this.label1.TabIndex = 8;
             this.label1.Text = "Hello, user!";
             // 
-            // panel1
+            // textHead
             // 
-            this.panel1.Controls.Add(this.iconMinimize);
-            this.panel1.Controls.Add(this.iconExit);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1039, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(113, 130);
-            this.panel1.TabIndex = 10;
+            this.textHead.AutoSize = true;
+            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textHead.Location = new System.Drawing.Point(45, 49);
+            this.textHead.Name = "textHead";
+            this.textHead.Size = new System.Drawing.Size(204, 39);
+            this.textHead.TabIndex = 7;
+            this.textHead.Text = "Home Page";
             // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelMain.Controls.Add(this.panel4);
+            this.panelMain.Controls.Add(this.panel3);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(230, 130);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1152, 623);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel4.BackgroundImage = global::WindowsFormFinalProject.Properties.Resources.Rubik_Shop_2_;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(710, 66);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(362, 521);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel3.BackgroundImage = global::WindowsFormFinalProject.Properties.Resources.Rubik_Shop_1_;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(157, 66);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(362, 521);
+            this.panel3.TabIndex = 0;
             // 
             // panel2
             // 
@@ -378,6 +403,7 @@ namespace WindowsFormFinalProject
             this.navBar.ResumeLayout(false);
             this.navBar.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -402,5 +428,7 @@ namespace WindowsFormFinalProject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

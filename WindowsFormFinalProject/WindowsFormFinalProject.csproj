@@ -301,6 +301,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\back4.jpg" />
     <Content Include="Resources\default.jpg" />
     <None Include="Resources\icons8-bill-32.png" />
     <None Include="Resources\icons8-shopping-cart-16.png" />
@@ -324,6 +325,9 @@
     <None Include="Resources\rubik-logo.png" />
     <None Include="Resources\Rubik.png" />
     <None Include="Resources\Rubik1.png" />
+    <None Include="Resources\Rubik Shop.png" />
+    <None Include="Resources\Rubik Shop%281%29.png" />
+    <None Include="Resources\Rubik Shop%282%29.png" />
     <Content Include="Resources\username-1.png" />
     <Content Include="Resources\username-2.png" />
   </ItemGroup>

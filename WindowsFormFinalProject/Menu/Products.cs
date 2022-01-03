@@ -39,5 +39,10 @@ namespace WindowsFormFinalProject.Menu
             ProductDetail prd2 = new ProductDetail(textBoxFindProductCate.Text);
             prd2.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

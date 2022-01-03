@@ -87,6 +87,6 @@ namespace WindowsFormFinalProject
         private void iconExit_Click(object sender, EventArgs e)
         {
             Close();
-        } 
+        }
     }
 }

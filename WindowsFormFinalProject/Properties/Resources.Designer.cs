@@ -73,6 +73,16 @@ namespace WindowsFormFinalProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back4 {
+            get {
+                object obj = ResourceManager.GetObject("back4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bill_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-bill-32", resourceCulture);
@@ -236,6 +246,36 @@ namespace WindowsFormFinalProject.Properties {
         internal static System.Drawing.Bitmap rubik_logo {
             get {
                 object obj = ResourceManager.GetObject("rubik-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubik_Shop {
+            get {
+                object obj = ResourceManager.GetObject("Rubik Shop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubik_Shop_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Rubik Shop(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubik_Shop_2_ {
+            get {
+                object obj = ResourceManager.GetObject("Rubik Shop(2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

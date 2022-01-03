@@ -46,6 +46,7 @@ namespace WindowsFormFinalProject.Menu
             this.categoryTableAdapter = new WindowsFormFinalProject.eShopManagementDataSet4TableAdapters.CategoryTableAdapter();
             this.btnFindProductCate = new XanderUI.XUIButton();
             this.textBoxFindProductCate = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet3)).BeginInit();
@@ -176,7 +177,7 @@ namespace WindowsFormFinalProject.Menu
             this.btnFindProductCate.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnFindProductCate.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnFindProductCate.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnFindProductCate.Location = new System.Drawing.Point(362, 56);
+            this.btnFindProductCate.Location = new System.Drawing.Point(346, 93);
             this.btnFindProductCate.Name = "btnFindProductCate";
             this.btnFindProductCate.Size = new System.Drawing.Size(119, 36);
             this.btnFindProductCate.TabIndex = 2;
@@ -187,16 +188,29 @@ namespace WindowsFormFinalProject.Menu
             // textBoxFindProductCate
             // 
             this.textBoxFindProductCate.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFindProductCate.Location = new System.Drawing.Point(116, 56);
+            this.textBoxFindProductCate.Location = new System.Drawing.Point(114, 93);
             this.textBoxFindProductCate.Name = "textBoxFindProductCate";
             this.textBoxFindProductCate.Size = new System.Drawing.Size(216, 36);
             this.textBoxFindProductCate.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 28);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Find Detail Category";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 576);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFindProductCate);
             this.Controls.Add(this.btnFindProductCate);
             this.Controls.Add(this.dataGridView2);
@@ -233,5 +247,6 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.DataGridViewTextBoxColumn nameCateDataGridViewTextBoxColumn1;
         private XanderUI.XUIButton btnFindProductCate;
         private System.Windows.Forms.TextBox textBoxFindProductCate;
+        private System.Windows.Forms.Label label1;
     }
 }
