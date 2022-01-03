@@ -319,6 +319,10 @@
     <None Include="Resources\icons8-view-details-96.png" />
     <None Include="Resources\icons8-xls-96.png" />
     <None Include="Resources\icons8-login-96%281%29.png" />
+    <None Include="Resources\icons8-add-96.png" />
+    <None Include="Resources\icons8-delete-96.png" />
+    <None Include="Resources\icons8-update-96.png" />
+    <None Include="Resources\icons8-clear-formatting-96.png" />
     <Content Include="Resources\logo100.png" />
     <Content Include="Resources\logo200.png" />
     <Content Include="Resources\password-1.png" />
