@@ -22,6 +22,8 @@ namespace WindowsFormFinalProject
             InitializeComponent();
         }
 
+        public string SetValueForText1 = "";
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -30,6 +32,7 @@ namespace WindowsFormFinalProject
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             String result = "";
+            SetValueForText1 = usernameInput.Text.ToString();
             try
             {
                 con = new SqlConnection(@"Data Source=DESKTOP-5LGQ0A2\ANHDUC;Initial Catalog=eShopManagement;Integrated Security=True");
@@ -84,6 +87,6 @@ namespace WindowsFormFinalProject
         private void iconExit_Click(object sender, EventArgs e)
         {
             Close();
-        }
+        } 
     }
 }

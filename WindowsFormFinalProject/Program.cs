@@ -23,7 +23,8 @@ namespace WindowsFormFinalProject
 
             if (openDashboard)
             {
-                Application.Run(new HomePage());
+                Form1 f1 = new Form1();
+                Application.Run(new HomePage(f1));
             }
         }
     }

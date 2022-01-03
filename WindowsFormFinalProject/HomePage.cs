@@ -14,15 +14,22 @@ namespace WindowsFormFinalProject
     public partial class HomePage : Form
     {
         private Form activeForm;
+        private Form1 f1;
 
         public HomePage()
         {
             InitializeComponent();
         }
 
+        public HomePage(Form1 pform)
+        {
+            InitializeComponent();
+            f1 = pform;
+        }
+
         private void HomePage_Load(object sender, EventArgs e)
         {
-
+            label2.Text = f1.SetValueForText1;
         }
 
         private void OpenChildForm(Form childForm)

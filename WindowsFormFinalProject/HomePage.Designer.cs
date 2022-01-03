@@ -30,13 +30,6 @@ namespace WindowsFormFinalProject
         private void InitializeComponent()
         {
             this.sideBar = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.Panel();
-            this.xuiClock1 = new XanderUI.XUIClock();
-            this.navBar = new System.Windows.Forms.Panel();
-            this.textHead = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.iconMinimize = new FontAwesome.Sharp.IconButton();
-            this.iconExit = new FontAwesome.Sharp.IconButton();
             this.btnLogOut = new XanderUI.XUIButton();
             this.btnStatistic = new XanderUI.XUIButton();
             this.btnProduct = new XanderUI.XUIButton();
@@ -44,6 +37,15 @@ namespace WindowsFormFinalProject
             this.btnBill = new XanderUI.XUIButton();
             this.btnWareHouse = new XanderUI.XUIButton();
             this.btnHome = new XanderUI.XUIButton();
+            this.logo = new System.Windows.Forms.Panel();
+            this.xuiClock1 = new XanderUI.XUIClock();
+            this.navBar = new System.Windows.Forms.Panel();
+            this.textHead = new System.Windows.Forms.Label();
+            this.iconMinimize = new FontAwesome.Sharp.IconButton();
+            this.iconExit = new FontAwesome.Sharp.IconButton();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.sideBar.SuspendLayout();
             this.logo.SuspendLayout();
             this.navBar.SuspendLayout();
@@ -65,103 +67,6 @@ namespace WindowsFormFinalProject
             this.sideBar.Name = "sideBar";
             this.sideBar.Size = new System.Drawing.Size(230, 753);
             this.sideBar.TabIndex = 0;
-            // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(186)))), ((int)(((byte)(161)))));
-            this.logo.Controls.Add(this.xuiClock1);
-            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(230, 130);
-            this.logo.TabIndex = 0;
-            // 
-            // xuiClock1
-            // 
-            this.xuiClock1.CircleThickness = 6;
-            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
-            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
-            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
-            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
-            this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.Location = new System.Drawing.Point(44, 4);
-            this.xuiClock1.Name = "xuiClock1";
-            this.xuiClock1.ShowAmPm = false;
-            this.xuiClock1.ShowHexagon = true;
-            this.xuiClock1.ShowMinutesCircle = true;
-            this.xuiClock1.ShowSecondsCircle = true;
-            this.xuiClock1.Size = new System.Drawing.Size(126, 120);
-            this.xuiClock1.TabIndex = 0;
-            this.xuiClock1.Text = "xuiClock1";
-            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
-            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
-            // 
-            // navBar
-            // 
-            this.navBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
-            this.navBar.Controls.Add(this.textHead);
-            this.navBar.Controls.Add(this.iconMinimize);
-            this.navBar.Controls.Add(this.iconExit);
-            this.navBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navBar.Location = new System.Drawing.Point(230, 0);
-            this.navBar.Name = "navBar";
-            this.navBar.Size = new System.Drawing.Size(1152, 130);
-            this.navBar.TabIndex = 1;
-            // 
-            // textHead
-            // 
-            this.textHead.AutoSize = true;
-            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textHead.Location = new System.Drawing.Point(45, 49);
-            this.textHead.Name = "textHead";
-            this.textHead.Size = new System.Drawing.Size(204, 39);
-            this.textHead.TabIndex = 7;
-            this.textHead.Text = "Home Page";
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(230, 130);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1152, 623);
-            this.panelMain.TabIndex = 2;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
-            // iconMinimize
-            // 
-            this.iconMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.iconMinimize.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMinimize.IconSize = 25;
-            this.iconMinimize.Location = new System.Drawing.Point(1064, 0);
-            this.iconMinimize.Margin = new System.Windows.Forms.Padding(4);
-            this.iconMinimize.Name = "iconMinimize";
-            this.iconMinimize.Size = new System.Drawing.Size(40, 37);
-            this.iconMinimize.TabIndex = 6;
-            this.iconMinimize.UseVisualStyleBackColor = true;
-            this.iconMinimize.Click += new System.EventHandler(this.iconMinimize_Click);
-            // 
-            // iconExit
-            // 
-            this.iconExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconExit.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconExit.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconExit.IconSize = 25;
-            this.iconExit.Location = new System.Drawing.Point(1112, 0);
-            this.iconExit.Margin = new System.Windows.Forms.Padding(4);
-            this.iconExit.Name = "iconExit";
-            this.iconExit.Size = new System.Drawing.Size(40, 37);
-            this.iconExit.TabIndex = 5;
-            this.iconExit.UseVisualStyleBackColor = true;
-            this.iconExit.Click += new System.EventHandler(this.iconExit_Click);
             // 
             // btnLogOut
             // 
@@ -324,6 +229,127 @@ namespace WindowsFormFinalProject
             this.btnHome.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(186)))), ((int)(((byte)(161)))));
+            this.logo.Controls.Add(this.xuiClock1);
+            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(230, 130);
+            this.logo.TabIndex = 0;
+            // 
+            // xuiClock1
+            // 
+            this.xuiClock1.CircleThickness = 6;
+            this.xuiClock1.DisplayFormat = XanderUI.XUIClock.HourFormat.TwelveHour;
+            this.xuiClock1.FilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(190)))), ((int)(((byte)(155)))));
+            this.xuiClock1.FilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.FilledSecondColor = System.Drawing.Color.DarkOrchid;
+            this.xuiClock1.Font = new System.Drawing.Font("Impact", 15F);
+            this.xuiClock1.HexagonColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.Location = new System.Drawing.Point(44, 4);
+            this.xuiClock1.Name = "xuiClock1";
+            this.xuiClock1.ShowAmPm = false;
+            this.xuiClock1.ShowHexagon = true;
+            this.xuiClock1.ShowMinutesCircle = true;
+            this.xuiClock1.ShowSecondsCircle = true;
+            this.xuiClock1.Size = new System.Drawing.Size(126, 120);
+            this.xuiClock1.TabIndex = 0;
+            this.xuiClock1.Text = "xuiClock1";
+            this.xuiClock1.UnfilledHourColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(70)))), ((int)(((byte)(85)))));
+            this.xuiClock1.UnfilledMinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            this.xuiClock1.UnfilledSecondColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(70)))));
+            // 
+            // navBar
+            // 
+            this.navBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(157)))), ((int)(((byte)(93)))));
+            this.navBar.Controls.Add(this.label2);
+            this.navBar.Controls.Add(this.label1);
+            this.navBar.Controls.Add(this.textHead);
+            this.navBar.Controls.Add(this.iconMinimize);
+            this.navBar.Controls.Add(this.iconExit);
+            this.navBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navBar.Location = new System.Drawing.Point(230, 0);
+            this.navBar.Name = "navBar";
+            this.navBar.Size = new System.Drawing.Size(1152, 130);
+            this.navBar.TabIndex = 1;
+            // 
+            // textHead
+            // 
+            this.textHead.AutoSize = true;
+            this.textHead.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textHead.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textHead.Location = new System.Drawing.Point(45, 49);
+            this.textHead.Name = "textHead";
+            this.textHead.Size = new System.Drawing.Size(204, 39);
+            this.textHead.TabIndex = 7;
+            this.textHead.Text = "Home Page";
+            // 
+            // iconMinimize
+            // 
+            this.iconMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconMinimize.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMinimize.IconSize = 25;
+            this.iconMinimize.Location = new System.Drawing.Point(1064, 0);
+            this.iconMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.iconMinimize.Name = "iconMinimize";
+            this.iconMinimize.Size = new System.Drawing.Size(40, 37);
+            this.iconMinimize.TabIndex = 6;
+            this.iconMinimize.UseVisualStyleBackColor = true;
+            this.iconMinimize.Click += new System.EventHandler(this.iconMinimize_Click);
+            // 
+            // iconExit
+            // 
+            this.iconExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconExit.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconExit.IconSize = 25;
+            this.iconExit.Location = new System.Drawing.Point(1112, 0);
+            this.iconExit.Margin = new System.Windows.Forms.Padding(4);
+            this.iconExit.Name = "iconExit";
+            this.iconExit.Size = new System.Drawing.Size(40, 37);
+            this.iconExit.TabIndex = 5;
+            this.iconExit.UseVisualStyleBackColor = true;
+            this.iconExit.Click += new System.EventHandler(this.iconExit_Click);
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(230, 130);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1152, 623);
+            this.panelMain.TabIndex = 2;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(953, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 30);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Hello,";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1059, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 30);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "user";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -362,5 +388,7 @@ namespace WindowsFormFinalProject
         private XanderUI.XUIButton btnProduct;
         private System.Windows.Forms.Label textHead;
         private XanderUI.XUIClock xuiClock1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
