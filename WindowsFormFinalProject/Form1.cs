@@ -26,7 +26,7 @@ namespace WindowsFormFinalProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            passwordInput.PasswordChar = '*';
         }
 
 
@@ -101,6 +101,11 @@ namespace WindowsFormFinalProject
             {
                 passwordInput.PasswordChar = '*';
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

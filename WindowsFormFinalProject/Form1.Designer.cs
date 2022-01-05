@@ -33,13 +33,13 @@ namespace WindowsFormFinalProject
             this.iconMinimize = new FontAwesome.Sharp.IconButton();
             this.iconExit = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.xuiSwitch1 = new XanderUI.XUISwitch();
             this.btnSubmit = new XanderUI.XUIButton();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.xuiSwitch1 = new XanderUI.XUISwitch();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -104,6 +104,23 @@ namespace WindowsFormFinalProject
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(642, 534);
             this.panel2.TabIndex = 15;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // xuiSwitch1
+            // 
+            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(180)))), ((int)(((byte)(120)))));
+            this.xuiSwitch1.Location = new System.Drawing.Point(436, 364);
+            this.xuiSwitch1.Name = "xuiSwitch1";
+            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(129)))), ((int)(((byte)(136)))));
+            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
+            this.xuiSwitch1.Size = new System.Drawing.Size(75, 39);
+            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
+            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
+            this.xuiSwitch1.TabIndex = 20;
+            this.xuiSwitch1.Text = "xuiSwitch1";
+            this.xuiSwitch1.Click += new System.EventHandler(this.xuiSwitch1_Click);
             // 
             // btnSubmit
             // 
@@ -188,25 +205,9 @@ namespace WindowsFormFinalProject
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(212, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 51);
+            this.label1.Size = new System.Drawing.Size(248, 49);
             this.label1.TabIndex = 14;
             this.label1.Text = "Login Form";
-            // 
-            // xuiSwitch1
-            // 
-            this.xuiSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.xuiSwitch1.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
-            this.xuiSwitch1.HandleOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(180)))), ((int)(((byte)(120)))));
-            this.xuiSwitch1.Location = new System.Drawing.Point(436, 364);
-            this.xuiSwitch1.Name = "xuiSwitch1";
-            this.xuiSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(129)))), ((int)(((byte)(136)))));
-            this.xuiSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
-            this.xuiSwitch1.Size = new System.Drawing.Size(75, 39);
-            this.xuiSwitch1.SwitchState = XanderUI.XUISwitch.State.On;
-            this.xuiSwitch1.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
-            this.xuiSwitch1.TabIndex = 20;
-            this.xuiSwitch1.Text = "xuiSwitch1";
-            this.xuiSwitch1.Click += new System.EventHandler(this.xuiSwitch1_Click);
             // 
             // Form1
             // 

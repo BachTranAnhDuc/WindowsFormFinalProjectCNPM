@@ -48,8 +48,9 @@ namespace WindowsFormFinalProject.Menu
             this.xuiButtonExecl = new XanderUI.XUIButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.xuiButton1 = new XanderUI.XUIButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eShopManagementDataSet1)).BeginInit();
@@ -58,8 +59,8 @@ namespace WindowsFormFinalProject.Menu
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDetailBill)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridBill
@@ -156,7 +157,7 @@ namespace WindowsFormFinalProject.Menu
             this.dataGridDetailBill.Name = "dataGridDetailBill";
             this.dataGridDetailBill.RowHeadersWidth = 51;
             this.dataGridDetailBill.RowTemplate.Height = 24;
-            this.dataGridDetailBill.Size = new System.Drawing.Size(495, 308);
+            this.dataGridDetailBill.Size = new System.Drawing.Size(495, 238);
             this.dataGridDetailBill.TabIndex = 4;
             // 
             // btnFindBillDetail
@@ -236,6 +237,16 @@ namespace WindowsFormFinalProject.Menu
             this.panel2.Size = new System.Drawing.Size(1134, 410);
             this.panel2.TabIndex = 84;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.xuiButton1);
+            this.panel4.Controls.Add(this.dataGridDetailBill);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(523, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(611, 410);
+            this.panel4.TabIndex = 6;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridBill);
@@ -245,14 +256,28 @@ namespace WindowsFormFinalProject.Menu
             this.panel3.Size = new System.Drawing.Size(523, 410);
             this.panel3.TabIndex = 5;
             // 
-            // panel4
+            // xuiButton1
             // 
-            this.panel4.Controls.Add(this.dataGridDetailBill);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(523, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(611, 410);
-            this.panel4.TabIndex = 6;
+            this.xuiButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.xuiButton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton1.ButtonImage = global::WindowsFormFinalProject.Properties.Resources.icons8_xls_96;
+            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton1.ButtonText = "Export";
+            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton1.Location = new System.Drawing.Point(406, 318);
+            this.xuiButton1.Name = "xuiButton1";
+            this.xuiButton1.Size = new System.Drawing.Size(147, 45);
+            this.xuiButton1.TabIndex = 82;
+            this.xuiButton1.TextColor = System.Drawing.Color.Black;
+            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
             // Bill
             // 
@@ -274,8 +299,8 @@ namespace WindowsFormFinalProject.Menu
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,5 +327,6 @@ namespace WindowsFormFinalProject.Menu
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private XanderUI.XUIButton xuiButton1;
     }
 }
