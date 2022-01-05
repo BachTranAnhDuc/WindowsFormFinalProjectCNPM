@@ -90,5 +90,17 @@ namespace WindowsFormFinalProject
                 MessageBox.Show(result);
             }
         }
+
+        private void xuiSwitch1_Click(object sender, EventArgs e)
+        {
+            if (passwordInput.PasswordChar == '*')
+            {
+                passwordInput.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordInput.PasswordChar = '*';
+            }
+        }
     }
 }
